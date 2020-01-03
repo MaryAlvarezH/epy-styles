@@ -1,0 +1,11 @@
+<div class="aside-menu-container">
+  <ul class="aside-menu-list">
+    <li
+      *ngFor="let comp of components; let i = index"
+      (click)="selectElement(i)"
+      [ngClass]="{ 'select-element': i === selectedComponent }"
+    >
+      {{ comp | titlecase }}
+    </li>
+  </ul>
+</div>

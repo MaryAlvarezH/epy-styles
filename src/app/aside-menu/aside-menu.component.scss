@@ -1,0 +1,14 @@
+@import "../../styles.scss";
+
+.aside-menu-list {
+  li {
+    height: 45px;
+    cursor: pointer;
+
+    &.select-element {
+      color: $dove-gray;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

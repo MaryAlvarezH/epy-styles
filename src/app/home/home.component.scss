@@ -1,0 +1,20 @@
+@import "../../styles.scss";
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: calc(100vh - 144px);
+  margin: 72px 0;
+  column-gap: 8px;
+}
+
+.menu,
+.main-section {
+  box-shadow: $x-large-shadow;
+}
+.menu {
+  background-color: $albaster;
+  padding: 50px;
+}
+.main-section {
+  padding: 20px 200px;
+}
