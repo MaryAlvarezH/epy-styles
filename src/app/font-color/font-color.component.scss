@@ -1,0 +1,266 @@
+@import "../../styles.scss";
+.wrapper-section {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.subtitle-container,
+h6 {
+  margin-top: 32px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+
+  > div,
+  > span {
+    margin-right: 3%;
+  }
+}
+
+.content {
+  width: 20%;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+  padding: 0 8px;
+}
+
+.square {
+  width: 25%;
+  height: 92px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+
+  .sub-square {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+
+    div {
+      height: inherit;
+      width: 50%;
+      line-height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.text-small {
+  font-size: 11.5px;
+  line-height: 16px;
+}
+
+.color-name {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jungle-green {
+  background-color: $jungle-green;
+}
+
+.mountain-meadow {
+  background-color: $mountain-meadow;
+}
+
+.algae-green {
+  background-color: $algae-green;
+}
+
+.java {
+  background-color: $java;
+}
+
+.niagara {
+  background-color: $niagara;
+}
+.aqua-island {
+  background-color: $aqua-island;
+}
+
+.yellow-green {
+  background-color: $yellow-green;
+}
+
+.conifer {
+  background-color: $conifer;
+}
+
+.tusk {
+  background-color: $tusk;
+}
+
+.lavander {
+  background-color: $lavander;
+}
+
+.purple-heart {
+  background-color: $purple-heart;
+}
+
+.french-lilac {
+  background-color: $french-lilac;
+}
+
+.royal-purple {
+  background-color: $royal-purple;
+}
+
+.daisy-bush {
+  background-color: $daisy-bush;
+}
+
+.amethyst {
+  background-color: $amethyst;
+}
+
+.circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.dune {
+  background-color: $dune;
+}
+
+.dove-gray {
+  background-color: $dove-gray;
+}
+
+.dusty-gray {
+  background-color: $dusty-gray;
+}
+
+.silver {
+  background-color: $silver;
+}
+
+.alto {
+  background-color: $alto;
+}
+
+.seashell {
+  background-color: $seashell;
+}
+
+.albaster {
+  background-color: $albaster;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid $dune;
+}
+
+.sherpa-blue {
+  background-color: $sherpa-blue;
+}
+
+.matisse {
+  background-color: $matisse;
+}
+
+.wuzzy-brown {
+  background-color: $wuzzy-brown;
+}
+
+.bus-yellow {
+  background-color: $bus-yellow;
+}
+
+.gradient {
+  width: 100%;
+  height: 16px;
+  border-radius: 8px;
+
+  &.green-gradient {
+    background: $green-gradient;
+  }
+  &.blue-gradient {
+    background: linear-gradient(90deg, #29bbc6 0%, $matisse 100%);
+  }
+}
+
+.gradient-container {
+  padding-bottom: 16px;
+
+  span {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
+
+.shadows-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-shadow-rectangle {
+  height: 112px;
+  width: 160px;
+  border: 1px solid $seashell;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: $x-large-shadow;
+}
+
+.box-shadow-lg {
+  box-sizing: border-box;
+  height: 84px;
+  width: 160px;
+  border: 1px solid $seashell;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: $large-shadow;
+}
+
+.box-shadow-m {
+  box-sizing: border-box;
+  height: 61px;
+  width: 160px;
+  border: 1px solid $seashell;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: $medium-shadow;
+}
+
+.box-shadow-sm {
+  box-sizing: border-box;
+  height: 32px;
+  width: 32px;
+  border: 1px solid $seashell;
+  border-radius: 4px;
+  background-color: $white;
+  box-shadow: $small-shadow;
+}

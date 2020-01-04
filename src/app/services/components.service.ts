@@ -6,17 +6,15 @@ import { Subject } from "rxjs";
 })
 export class ComponentsService {
   public components: Array<any> = [
-    "fonts",
-    "colors",
-    "containers",
+    "fonts & colors",
     "buttons",
-    "input",
+    "inputs",
     "selects",
     "tooltips",
     "loaders"
   ];
 
-  public selectedComponent: number;
+  public selectedComponent: number = 0;
   public componentSource = new Subject<number>();
   public selectedComponent$ = this.componentSource.asObservable();
   constructor() {}

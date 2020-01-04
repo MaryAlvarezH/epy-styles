@@ -3,7 +3,8 @@
   padding-bottom: 15px;
 }
 
-.subtitle-container {
+.subtitle-container,
+h6 {
   margin-top: 32px;
 }
 
@@ -12,7 +13,8 @@
   align-items: center;
   padding: 15px 0;
 
-  button {
-    margin-right: 25px;
+  span,
+  div {
+    margin-right: 3%;
   }
 }

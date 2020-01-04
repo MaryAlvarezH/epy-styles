@@ -16,6 +16,7 @@ export class AsideMenuComponent implements OnInit {
 
   ngOnInit() {
     this.components = this.compservice.components;
+    this.selectedComponent = this.compservice.selectedComponent;
     this.componentSub = this.compservice.selectedComponent$.subscribe(
       selComp => {
         this.selectedComponent = selComp;

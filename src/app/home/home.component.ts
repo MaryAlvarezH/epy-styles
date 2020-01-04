@@ -14,8 +14,9 @@ export class HomeComponent implements OnInit {
   constructor(private compservice: ComponentsService) {}
 
   ngOnInit() {
-    // this.selectedComponent = this.compservice.selectedComponent;
-
+    this.selectedComponent = this.compservice.components[
+      this.compservice.selectedComponent
+    ];
     this.componentSub = this.compservice.selectedComponent$.subscribe(
       selComp => {
         this.selectedComponent = this.compservice.components[selComp];
