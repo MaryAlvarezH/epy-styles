@@ -2,11 +2,16 @@
   <h4>Buttons</h4>
   <hr />
   <div class="subtitle-container">
-    <span class="subtitle">Types</span>
+    <div class="subtitle">Types</div>
   </div>
-
   <div class="wrapper-section">
-    <h6>Containded Buttons</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Contained Buttons</h6>
+      <i
+        class="fa fa-code"
+        (click)="containBtnDisplay = !containBtnDisplay"
+      ></i>
+    </div>
     <div class="container">
       <button class="btn btn-default">
         default
@@ -18,10 +23,34 @@
         disabled
       </button>
     </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !containBtnDisplay }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="container"&gt;
+            &lt;button class="btn btn-default"&gt;
+                default
+            &lt;/button&gt;
+            &lt;button class="btn btn-primary"&gt;
+                primary
+            &lt;/button&gt;
+            &lt;button class="btn btn-primary" disabled&gt;
+                disabled
+            &lt;/button&gt;
+        &lt;/div&gt;
+        </code>
+        </pre>
+    </div>
   </div>
 
   <div class="wrapper-section">
-    <h6>Outlined Buttons</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Outlined Buttons</h6>
+      <i
+        class="fa fa-code"
+        (click)="outlineBtnDisplay = !outlineBtnDisplay"
+      ></i>
+    </div>
     <div class="container">
       <button class="btn btn-outline">
         outline
@@ -36,26 +65,86 @@
         destructive
       </button>
     </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !outlineBtnDisplay }">
+      <pre>
+            <code class="html" Highlight>
+            &lt;div class="container"&gt;
+                &lt;button class="btn btn-outline"&gt;
+                    outline
+                &lt;/button&gt;
+                &lt;button class="btn btn-primary btn-outline"&gt;
+                    primary outline
+                &lt;/button&gt;
+                &lt;button class="btn btn-primary btn-outline" disabled&gt;
+                    disabled
+                &lt;/button&gt;
+                &lt;button class="btn btn-destructive btn-outline"&gt;
+                    destructive
+                &lt;/button&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+    </div>
   </div>
 
   <div class="wrapper-section">
-    <h6>Text Buttons - Links</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Text Buttons - Links</h6>
+      <i class="fa fa-code" (click)="linkBtnDisplay = !linkBtnDisplay"></i>
+    </div>
+
     <div class="container">
       <button class="btn btn-link">
         link
       </button>
     </div>
+    <div class="code-container" [ngClass]="{ hidden: !linkBtnDisplay }">
+      <pre>
+            <code class="html" Highlight>
+            &lt;div class="container"&gt;
+                &lt;button class="btn btn btn-link"&gt;
+                    link
+                &lt;/button&gt;
+            &lt;/div&gt;
+            </code>
+        </pre>
+    </div>
   </div>
 
   <div class="wrapper-section">
-    <h6>Destructive Buttons</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Destructive Buttons</h6>
+      <i
+        class="fa fa-code"
+        (click)="destructiveBtnDisplay = !destructiveBtnDisplay"
+      ></i>
+    </div>
     <div class="container">
-      <button class="btn btn-destructive btn-outline">
-        destructive
-      </button>
       <button class="btn btn-destructive">
         destructive
       </button>
+      <button class="btn btn-destructive btn-outline">
+        destructive
+      </button>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !destructiveBtnDisplay }">
+      <pre>
+            <i
+            class="fa fa-copy"
+            (click)="destructiveBtnDisplay = !destructiveBtnDisplay"
+          ></i>
+        <code class="html" Highlight>
+        &lt;div class="container"&gt;
+            &lt;button class="btn btn-destructive"&gt;
+            destructive
+            &lt;/button&gt;
+            &lt;button class="btn btn-destructive btn-outline"&gt;
+            destructive
+            &lt;/button&gt;
+        &lt;/div&gt;
+        </code>
+        </pre>
     </div>
   </div>
 

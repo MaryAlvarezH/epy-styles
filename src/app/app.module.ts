@@ -11,6 +11,8 @@ import { InputComponent } from "./input/input.component";
 import { SelectComponent } from "./select/select.component";
 import { TooltipComponent } from "./tooltip/tooltip.component";
 import { LoaderComponent } from "./loader/loader.component";
+import { highlight } from "highlight.js";
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { LoaderComponent } from "./loader/loader.component";
     InputComponent,
     SelectComponent,
     TooltipComponent,
-    LoaderComponent
+    LoaderComponent,
+    HighlightDirective
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

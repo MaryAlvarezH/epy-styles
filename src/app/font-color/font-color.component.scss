@@ -4,24 +4,15 @@
   padding-bottom: 15px;
 }
 
-.subtitle-container,
-h6 {
-  margin-top: 32px;
-}
-
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 0;
-
-  > div,
-  > span {
-    margin-right: 3%;
-  }
 }
 
 .content {
-  width: 20%;
+  width: 13%;
   height: 32px;
   border-radius: 4px;
   display: flex;
@@ -32,7 +23,7 @@ h6 {
 }
 
 .square {
-  width: 25%;
+  width: 18%;
   height: 92px;
   border-radius: 4px;
   display: flex;
@@ -173,7 +164,7 @@ h6 {
 
 .white {
   background-color: white;
-  border: 1px solid $dune;
+  border: 1px solid $alto;
 }
 
 .sherpa-blue {
@@ -218,6 +209,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 .box-container {
@@ -263,4 +255,21 @@ h6 {
   border-radius: 4px;
   background-color: $white;
   box-shadow: $small-shadow;
+}
+
+.color-usage {
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  column-gap: 3%;
+  .circle-container {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100% !important;
+  }
+}
+
+.font-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 16px;
 }

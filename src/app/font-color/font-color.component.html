@@ -1,34 +1,12 @@
 <div>
-  <!-- **********************FONTS********************** -->
-  <h4>Fonts</h4>
-  <hr />
-  <div class="wrapper-section">
-    <h6>Types</h6>
-    <div class="container">
-      <span class="title">Title</span>
-      <span class="subtitle">Subtitle</span>
-      <span class="text-regular">Text regular</span>
-      <span class="text-suggest">Text suggest</span>
-      <span class="text-small">Text small</span>
-      <span class="text-danger">Text danger</span>
-    </div>
-    <h6>Colors</h6>
-    <div class="container">
-      <span class="text-green">Text green</span>
-      <span class="text-blue">Text blue</span>
-      <span class="text-light-green">Text light green</span>
-      <span class="text-lavander">Text lavander</span>
-      <span class="text-purple">Text purple</span>
-      <span class="text-yellow">Text yellow</span>
-      <span class="text-red">Text red</span>
-    </div>
-  </div>
-
   <!-- **********************COLORS********************** -->
-  <h4>Colors</h4>
+  <h4>Color Palette</h4>
   <hr />
   <div class="palette-container">
-    <h6>Color Palette</h6>
+    <div class="subtitle-container">
+      <h6>Colors</h6>
+      <span>Variables</span>
+    </div>
     <div class="container color-palette">
       <div class="square jungle-green">
         <div class="color-name">
@@ -162,7 +140,11 @@
       </div>
     </div>
 
-    <h6>Gradients</h6>
+    <div class="subtitle-container">
+      <h6>Gradients</h6>
+      <span>Variables</span>
+    </div>
+
     <div class="gradient-container">
       <span>green-gradient</span>
       <div class="gradient green-gradient"></div>
@@ -173,7 +155,11 @@
     </div>
   </div>
 
-  <h6>Shadows</h6>
+  <div class="subtitle-container">
+    <h6>Shadows</h6>
+    <span>Variables</span>
+  </div>
+
   <div class="shadows-container">
     <div class="box-container">
       <div class="box-shadow-rectangle"></div>
@@ -189,39 +175,196 @@
     <div class="box-container">
       <div class="box-shadow-m"></div>
       <span>medium-shadow</span>
-      <span class="text-suggest">Large Buttons</span>
+      <span class="text-suggest">Medium Buttons</span>
     </div>
     <div class="box-container">
       <div class="box-shadow-sm"></div>
       <span>small-shadow</span>
-      <span class="text-suggest">Large Buttons</span>
+      <span class="text-suggest">Small Buttons</span>
+    </div>
+  </div>
+
+  <div class="subtitle-container">
+    <h6>Usage</h6>
+    <span>Variables</span>
+  </div>
+  <div class="container color-palette color-usage">
+    <div class="circle-container">
+      <div class="circle dove-gray"></div>
+      <span>dove-gray</span>
+      <span class="text-suggest">Normal Text Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle albaster"></div>
+      <span>albaster</span>
+      <span class="text-suggest">Background Color</span>
+    </div>
+    <div class="circle-container">
+      <div class="circle seashell"></div>
+      <span>seashell</span>
+      <span class="text-suggest">Border/Line Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle bus-yellow"></div>
+      <span>bus-yellow</span>
+      <span class="text-suggest">Alert Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle wuzzy-brown"></div>
+      <span>wuzzy-brown</span>
+      <span class="text-suggest">Destructive Color</span>
+    </div>
+  </div>
+  <div class="container color-palette color-usage">
+    <div class="circle-container">
+      <div class="circle java"></div>
+      <span>java</span>
+      <span class="text-suggest">Informative Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle niagara"></div>
+      <span>niagara</span>
+      <span class="text-suggest">Hover Informative Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle jungle-green"></div>
+      <span>jungle-green</span>
+      <span class="text-suggest">Active Color</span>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle mountain-meadow"></div>
+      <span>mountain-meadow</span>
+      <span class="text-suggest">Hover Active Color</span>
     </div>
   </div>
 
   <div class="wrapper-section">
-    <h6>Content colors</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Content colors</h6>
+      <i
+        class="fa fa-code"
+        (click)="contentColorsDisplay = !contentColorsDisplay"
+      ></i>
+    </div>
+
     <div class="container">
       <div class="content content-green">
-        <span class="text-white text-small">content-green</span>
+        <span class="text-small text-white">content-green</span>
       </div>
       <div class="content content-blue">
-        <span class="text-white text-small">content-blue</span>
+        <span class="text-small text-white">content-blue</span>
       </div>
       <div class="content content-light-green">
-        <span class="text-white text-small">content-light-green</span>
+        <span class="text-small text-white">content-light-green</span>
       </div>
       <div class="content content-lavander">
-        <span class="text-white text-small">content-lavander</span>
+        <span class="text-small text-white">content-lavander</span>
       </div>
       <div class="content content-purple">
-        <span class="text-white text-small">content-purple</span>
+        <span class="text-small text-white">content-purple</span>
       </div>
       <div class="content content-yellow">
-        <span class="text-white text-small">content-yellow</span>
+        <span class="text-small text-white">content-yellow</span>
       </div>
       <div class="content content-red">
-        <span class="text-white text-small">content-red</span>
+        <span class="text-small text-white">content-red</span>
       </div>
+    </div>
+    <!-- < &lt; -->
+    <!-- > &gt; -->
+    <div class="code-container" [ngClass]="{ hidden: !contentColorsDisplay }">
+      <pre>
+    <code class="html" Highlight>
+    &lt;div class="container"&gt;
+        &lt;div class="content content-green"&gt;
+            &lt;span class="text-small text-white"&gt;content-green&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-blue"&gt;
+            &lt;span class="text-small text-white"&gt;content-blue&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-light-green"&gt;
+            &lt;span class="text-small text-white"&gt;content-light-green&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-lavander"&gt;
+            &lt;span class="text-small text-white"&gt;content-lavander&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-purple"&gt;
+            &lt;span class="text-small text-white"&gt;content-purple&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-yellow"&gt;
+            &lt;span class="text-small text-white"&gt;content-yellow&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="content content-red"&gt;
+            &lt;span class="text-small text-white"&gt;content-red&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+    </pre>
+    </div>
+  </div>
+
+  <!-- **********************FONTS********************** -->
+  <h4>Fonts</h4>
+  <hr />
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h6>Types</h6>
+      <i class="fa fa-code" (click)="fontTypesDisplay = !fontTypesDisplay"></i>
+    </div>
+    <div class="container font-container">
+      <span class="title">Title</span>
+      <span class="subtitle">Subtitle</span>
+      <span class="text-regular">Text regular</span>
+      <span class="text-suggest">Text suggest</span>
+      <span class="text-small">Text small</span>
+      <span class="text-danger">Text danger</span>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !fontTypesDisplay }">
+      <pre>
+      <code class="html" Highlight>
+        &lt;span class="title"&gt;Title&lt;/span&gt;
+        &lt;span class="subtitle"&gt;Subtitle&lt;/span&gt;
+        &lt;span class="text-regular"&gt;Text regular&lt;/span&gt;
+        &lt;span class="text-suggest"&gt;Text suggest&lt;/span&gt;
+        &lt;span class="text-small"&gt;Text small&lt;/span&gt;
+        &lt;span class="text-danger"&gt;Text danger&lt;/span&gt;
+    </code>
+    </pre>
+    </div>
+    <div class="subtitle-container subtitle-icon">
+      <h6>Colors</h6>
+      <i
+        class="fa fa-code"
+        (click)="fontColorsDisplay = !fontColorsDisplay"
+      ></i>
+    </div>
+    <div class="container font-container">
+      <span class="text-green">Text green</span>
+      <span class="text-blue">Text blue</span>
+      <span class="text-light-green">Text light green</span>
+      <span class="text-lavander">Text lavander</span>
+      <span class="text-purple">Text purple</span>
+      <span class="text-yellow">Text yellow</span>
+      <span class="text-red">Text red</span>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !fontColorsDisplay }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;span class="text-green"&gt;Text green&lt;/span&gt;
+        &lt;span class="text-blue"&gt;Text blue&lt;/span&gt;
+        &lt;span class="text-light-green"&gt;Text light green&lt;/span&gt;
+        &lt;span class="text-lavander"&gt;Text lavander&lt;/span&gt;
+        &lt;span class="text-purple"&gt;Text purple&lt;/span&gt;
+        &lt;span class="text-yellow"&gt;Text yellow&lt;/span&gt;
+        &lt;span class="text-red"&gt;Text red&lt;/span&gt;
+        </code>
+        </pre>
     </div>
   </div>
 </div>
