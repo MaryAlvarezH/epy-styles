@@ -103,7 +103,7 @@
       <pre>
             <code class="html" Highlight>
             &lt;div class="container"&gt;
-                &lt;button class="btn btn btn-link"&gt;
+                &lt;button class="btn btn-link"&gt;
                     link
                 &lt;/button&gt;
             &lt;/div&gt;
@@ -132,7 +132,7 @@
       <pre>
             <i
             class="fa fa-copy"
-            (click)="destructiveBtnDisplay = !destructiveBtnDisplay"
+            ngxClipboard [cbContent]="'Text to be copied'"
           ></i>
         <code class="html" Highlight>
         &lt;div class="container"&gt;

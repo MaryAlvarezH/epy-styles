@@ -11,8 +11,8 @@ import { InputComponent } from "./input/input.component";
 import { SelectComponent } from "./select/select.component";
 import { TooltipComponent } from "./tooltip/tooltip.component";
 import { LoaderComponent } from "./loader/loader.component";
-import { highlight } from "highlight.js";
-import { HighlightDirective } from './highlight.directive';
+import { HighlightDirective } from "./highlight.directive";
+import { ClipboardModule } from "ngx-clipboard";
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { HighlightDirective } from './highlight.directive';
     LoaderComponent,
     HighlightDirective
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ClipboardModule],
   providers: [],
   bootstrap: [AppComponent]
 })

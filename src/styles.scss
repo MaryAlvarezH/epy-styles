@@ -70,3 +70,12 @@ h6 {
     cursor: pointer;
   }
 }
+
+pre {
+  display: flex;
+  flex-direction: column;
+  i {
+    align-self: flex-end;
+    margin-bottom: 4px;
+  }
+}
