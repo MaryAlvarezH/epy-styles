@@ -4,122 +4,153 @@
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Bot loader</h4>
-      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+      <i class="fa fa-code" (click)="botLoader = !botLoader"></i>
     </div>
-    <div class="row">
-      <div class="col s1">
+    <div class="epy-row">
+      <div class="col-1">
         <div class="bot-loader"></div>
       </div>
     </div>
-  </div>
-
-  <div class="wrapper-section">
-    <div class="subtitle-container subtitle-icon">
-      <h4>Bar loader</h4>
-      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+    <div class="code-container" [ngClass]="{ hidden: !botLoader }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="bot-loader"&gt;&lt;/div&gt;
+        </code>
+        </pre>
     </div>
-    <div class="row">
-      <div class="wrapper">
-        <span>bar loader (100%)</span>
-        <div class="bar-loader"></div>
-        <span>bar loader title (25%)</span>
-        <div class="bar-loader title"></div>
-        <span>bar loader subtitle (20%)</span>
-        <div class="bar-loader subtitle"></div>
-        <span>bar loader detail (92px)</span>
-        <div class="bar-loader detail"></div>
-        <span>bar loader detail dark</span>
-        <div class="bar-loader detail dark"></div>
+
+    <div class="wrapper-section">
+      <div class="subtitle-container subtitle-icon">
+        <h4>Bar loader</h4>
+        <i class="fa fa-code" (click)="barLoader = !barLoader"></i>
       </div>
-    </div>
-  </div>
-
-  <div class="wrapper-section">
-    <div class="subtitle-container subtitle-icon">
-      <h4>Grid bar loader</h4>
-      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
-    </div>
-    <div class="row">
-      <div class="col s4">
-        <span>table-loader col-2</span>
-        <div class="table-loader col-2">
+      <div class="epy-row">
+        <div class="wrapper">
+          <span>bar loader (100%)</span>
           <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
+          <span>bar loader title (25%)</span>
+          <div class="bar-loader title"></div>
+          <span>bar loader subtitle (20%)</span>
+          <div class="bar-loader subtitle"></div>
+          <span>bar loader detail (92px)</span>
+          <div class="bar-loader detail"></div>
+          <span>bar loader detail dark</span>
+          <div class="bar-loader detail dark"></div>
         </div>
       </div>
-      <div class="col s4">
-        <span>table-loader col-3</span>
-        <div class="table-loader col-3">
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-        </div>
-      </div>
-      <div class="col s4">
-        <span>table-loader col-4</span>
-        <div class="table-loader col-4">
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-        </div>
+      <div class="code-container" [ngClass]="{ hidden: !barLoader }">
+        <pre>
+            <code class="html" Highlight>
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader title"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader subtitle"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader detail"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader detail dark"&gt;&lt;/div&gt;
+          </code>
+        </pre>
       </div>
     </div>
-  </div>
 
-  <h2>Templates</h2>
-  <hr />
-
-  <div class="wrapper-section">
-    <div class="subtitle-container subtitle-icon">
-      <h4>Stat Loader (Template)</h4>
-      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
-    </div>
-    <div class="row">
-      <div class="stat-loader">
-        <div class="bar-loader title"></div>
-        <div class="bar-loader subtitle"></div>
-        <div class="table-loader col-5">
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
-          <div class="bar-loader"></div>
+    <div class="wrapper-section">
+      <div class="subtitle-container subtitle-icon">
+        <h4>Grid bar loader</h4>
+        <i class="fa fa-code" (click)="gridLoader = !gridLoader"></i>
+      </div>
+      <div class="epy-row">
+        <div class="col-4">
+          <span>table-loader col2</span>
+          <div class="table-loader col2">
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+          </div>
         </div>
+        <div class="col-4">
+          <span>table-loader col3</span>
+          <div class="table-loader col3">
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+          </div>
+        </div>
+        <div class="col-4">
+          <span>table-loader col4</span>
+          <div class="table-loader col4">
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+          </div>
+        </div>
+      </div>
+      <div class="code-container" [ngClass]="{ hidden: gridLoader }">
+        <pre>
+          <code class="html" HightLight>
+          <!-- Two Colums -->
+          <!-- <div class="table-loader col2">
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+          </div> -->
+          </code>
+        </pre>
+      </div>
+    </div>
 
-        <div class="bar-loader chart-loader">
-          <div class="chart-stroke-1"></div>
-          <div class="chart-stroke-2"></div>
-          <div class="chart-stroke-3"></div>
-          <div class="chart-stroke-4"></div>
-          <div class="chart-stroke-5"></div>
-          <div class="chart-stroke-6"></div>
+    <h2>Templates</h2>
+    <hr />
+
+    <div class="wrapper-section">
+      <div class="subtitle-container subtitle-icon">
+        <h4>Stat Loader (Template)</h4>
+        <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+      </div>
+      <div class="row">
+        <div class="stat-loader">
+          <div class="bar-loader title"></div>
+          <div class="bar-loader subtitle"></div>
+          <div class="table-loader col5">
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+            <div class="bar-loader"></div>
+          </div>
+
+          <div class="bar-loader chart-loader">
+            <div class="chart-stroke-1"></div>
+            <div class="chart-stroke-2"></div>
+            <div class="chart-stroke-3"></div>
+            <div class="chart-stroke-4"></div>
+            <div class="chart-stroke-5"></div>
+            <div class="chart-stroke-6"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="wrapper-section">
-    <div class="subtitle-container subtitle-icon">
-      <h4>Progress Bar</h4>
-      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
-    </div>
-    <div class="row">
-      <progress max="100" value="10"></progress>
+    <div class="wrapper-section">
+      <div class="subtitle-container subtitle-icon">
+        <h4>Progress Bar</h4>
+        <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+      </div>
+      <div class="row">
+        <progress max="100" value="10"></progress>
+      </div>
     </div>
   </div>
 </div>
