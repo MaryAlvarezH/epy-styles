@@ -28,7 +28,10 @@
               "src/styles.scss",
               "node_modules/epy-scss/dist/css/epy.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/epy-scss/dist/main.js"
+            ]
           },
           "configurations": {
             "production": {

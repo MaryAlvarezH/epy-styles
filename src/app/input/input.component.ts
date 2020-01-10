@@ -8,9 +8,10 @@ import { Component, OnInit } from "@angular/core";
 export class InputComponent implements OnInit {
   public lineInput: boolean = false;
   public outlineInput: boolean = false;
-  public labelInput: boolean = false;
   public iconInput: boolean = false;
+  public specialInput: boolean = false;
   public textarea: boolean = false;
+  public labelInput: boolean = false;
 
   constructor() {}
 

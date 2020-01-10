@@ -11,8 +11,10 @@
   },
   "private": true,
   "dependencies": {
-    "epy-scss": "1.1.7",
+    "@types/jquery": "^3.3.31",
+    "epy-scss": "1.2.0",
     "highlight.js": "^9.17.1",
+    "jquery": "^3.4.1",
     "ngx-clipboard": "^12.3.0"
   },
   "devDependencies": {
