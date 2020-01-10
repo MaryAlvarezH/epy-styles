@@ -11,7 +11,8 @@ export class ComponentsService {
     "inputs",
     "selects",
     "tooltips",
-    "loaders"
+    "loaders",
+    "grid"
   ];
 
   public selectedComponent: number = 0;

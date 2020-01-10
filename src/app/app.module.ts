@@ -13,6 +13,7 @@ import { TooltipComponent } from "./tooltip/tooltip.component";
 import { LoaderComponent } from "./loader/loader.component";
 import { HighlightDirective } from "./highlight.directive";
 import { ClipboardModule } from "ngx-clipboard";
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ClipboardModule } from "ngx-clipboard";
     SelectComponent,
     TooltipComponent,
     LoaderComponent,
-    HighlightDirective
+    HighlightDirective,
+    GridComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ClipboardModule],
   providers: [],
