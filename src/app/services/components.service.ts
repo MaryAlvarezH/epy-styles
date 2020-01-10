@@ -11,6 +11,7 @@ export class ComponentsService {
     "inputs",
     "selects",
     "tooltips",
+    "cards",
     "loaders"
   ];
 

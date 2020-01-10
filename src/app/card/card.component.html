@@ -1,0 +1,94 @@
+<h1>Cards</h1>
+<hr />
+
+<div class="wrapper-section">
+  <div class="subtitle-container subtitle-icon">
+    <h4>Card</h4>
+    <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <span>card</span>
+      <div class="card" style="height: 80px;"></div>
+    </div>
+
+    <div class="col s3">
+      <span>card hoverable</span>
+      <div class="card hoverable" style="height: 80px;"></div>
+    </div>
+
+    <div class="col s6">
+      <span>card panel</span>
+      <div class="card-panel hoverable" style="height: 80px;"></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-section">
+  <div class="subtitle-container subtitle-icon">
+    <h4>Templetes</h4>
+    <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+  </div>
+
+  <div class="row">
+    <div class="col s9">
+      <span>Campaign card</span>
+      <div class="card-panel card-campaign hoverable">
+        <div class="card-header">
+          <span class="card-title">100 - Brand [Entropy]</span>
+          <span class="priority-label">High priority</span>
+          <div class="camp-type">
+            <div class="icon-circle-container">
+              <span class="search-icon"></span>
+            </div>
+            <span>search</span>
+          </div>
+        </div>
+        <div class="camp-details">
+          <div class="general-info">
+            <div class="field-info">
+              <span class="field upper">Daily Budget</span>
+              <span class="field">$ 100</span>
+            </div>
+            <div class="field-info">
+              <span class="field upper">Status</span>
+              <span class="field yellow">Paused</span>
+            </div>
+            <div class="field-info">
+              <span class="field upper">Goal</span>
+              <span class="field">Maximaze Clicks</span>
+            </div>
+          </div>
+          <div class="stats">
+            <span class="field subtitle">last 7 days: </span>
+            <div class="stat">
+              <span class="field upper">clicks</span>
+              <b class="metric-score">1.1k</b>
+              <div class="metric-percent">
+                <i class="material-icons up text-red">arrow_drop_down</i>
+                <span>-17.19%</span>
+              </div>
+            </div>
+            <div class="stat">
+              <span class="field upper">cost</span>
+              <b class="metric-score">$20.0k</b>
+              <div class="metric-percent">
+                <i class="material-icons up text-green">arrow_drop_down</i>
+                <span>-17.19%</span>
+              </div>
+            </div>
+            <div class="stat">
+              <span class="field upper">revenue</span>
+              <b class="metric-score">$66.5k</b>
+              <div class="metric-percent">
+                <i class="material-icons up text-green">arrow_drop_up</i>
+                <span>36.69%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

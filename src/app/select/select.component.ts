@@ -6,6 +6,11 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./select.component.scss"]
 })
 export class SelectComponent implements OnInit {
+  public typeSelect: boolean = false;
+  public variationSelect: boolean = false;
+  public contentSelect: boolean = false;
+  public labelSelect: boolean = false;
+
   public selectOne: boolean;
   public selectTwo: boolean;
   public selectThree: boolean;
@@ -15,29 +20,23 @@ export class SelectComponent implements OnInit {
   public selectSeven: boolean;
   public selectEight: boolean;
   public selectNine: boolean;
+  public selectTen: boolean;
+  public selectEleven: boolean;
 
-  public optionOne: String;
-  public optionTwo: String;
-  public optionThree: String;
-  public optionFour: String;
-  public optionFive: String;
-  public optionSix: String;
+  public optionOne: Number;
+  public optionTwo: Number;
+  public optionThree: Number;
+  public optionFour: Number;
+  public optionFive: Number;
+  public optionSix: Number;
   public optionSeven: Number;
-  public optionEight: Number;
+  public optionEight: String;
+  public optionNine: Number;
+  public optionTen: Number;
+  public optionEleven: Number;
 
-  public options: Array<any> = [
-    "maximaze revenue",
-    "maximaze clicks",
-    "maximaze conversions",
-    "maximaze impressions",
-    "maximaze profit"
-  ];
-
-  public optionsTwo: Array<any> = ["Editor", "Administrator"];
-
-  public optionsThree: Array<any> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
-  public optionsFour: Array<any> = [
+  public options: Array<any> = [1, 2, 3, 4];
+  public optionsTwo: Array<any> = [
     "blue",
     "pink",
     "red",
@@ -53,7 +52,7 @@ export class SelectComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.optionsFiltered = this.optionsFour;
+    this.optionsFiltered = this.optionsTwo;
   }
 
   filterEvent(e) {
@@ -61,7 +60,7 @@ export class SelectComponent implements OnInit {
   }
 
   onChangeFilter() {
-    this.optionsFiltered = this.optionsFour.filter(opt =>
+    this.optionsFiltered = this.optionsTwo.filter(opt =>
       opt.toLowerCase().includes(this.filter.toLowerCase())
     );
   }
