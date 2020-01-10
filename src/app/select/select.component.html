@@ -1,210 +1,278 @@
 <div>
-  <h4>Selects</h4>
+  <h1>Selects</h1>
   <hr />
-  <!-- <div class="subtitle-container">
-    <span class="subtitle">
-      Contained Inputs
-    </span>
-  </div> -->
-  <h6>Contained Select</h6>
-  <div class="wrapper-section">
-    <div class="row">
-      <div class="col s5">
+
+  <div class col="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <div class="subtitle">Types</div>
+      <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+    </div>
+    <div class="container">
+      <div class="section-element">
+        <h4 class="sub-type">Primary</h4>
         <div
           class="select select-primary"
           (click)="selectOne = !selectOne"
           [ngClass]="{ active: selectOne }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
               <div class="select-value">
-                <span *ngIf="!optionOne">Select strategy</span>
-                <span *ngIf="optionOne"> {{ optionOne | titlecase }}</span>
+                <span *ngIf="!optionOne">Exmaple select</span>
+                <span *ngIf="optionOne"> {{ optionOne }}</span>
               </div>
               <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
                 *ngFor="let opt of options"
                 (click)="optionOne = opt"
                 class="option"
                 [ngClass]="{ selected: optionOne === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <h6>Outlined Selects</h6>
-  <div class="wrapper-section">
-    <div class="row">
-      <div class="col s4">
+      <div class="section-element">
+        <h4 class="sub-type">Outline</h4>
         <div
           class="select select-outline"
           (click)="selectTwo = !selectTwo"
           [ngClass]="{ active: selectTwo }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
               <div class="select-value">
-                <span *ngIf="!optionTwo">Select rol</span>
-                <span *ngIf="optionTwo"> {{ optionTwo | titlecase }}</span>
+                <span *ngIf="!optionTwo">Example select</span>
+                <span *ngIf="optionTwo"> {{ optionTwo }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsTwo"
+                *ngFor="let opt of options"
                 (click)="optionTwo = opt"
                 class="option"
                 [ngClass]="{ selected: optionTwo === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="col s4">
+      <div class="section-element">
+        <h4 class="sub-type">Line</h4>
         <div
-          class="select select-outline"
+          class="select select-line"
           (click)="selectThree = !selectThree"
           [ngClass]="{ active: selectThree }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
-              <img src="../../assets/icons/user_editor.svg" />
               <div class="select-value">
-                <span *ngIf="!optionThree">Select rol</span>
-                <span *ngIf="optionThree"> {{ optionThree | titlecase }}</span>
+                <span *ngIf="!optionThree">Example select</span>
+                <span *ngIf="optionThree"> {{ optionThree }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsTwo"
+                *ngFor="let opt of options"
                 (click)="optionThree = opt"
                 class="option"
                 [ngClass]="{ selected: optionThree === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="col s4">
+      <div class="section-element">
+        <h4 class="sub-type">No border</h4>
         <div
-          class="select select-primary select-outline"
+          class="select select-border-none"
           (click)="selectFour = !selectFour"
           [ngClass]="{ active: selectFour }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
-              <img src="../../assets/icons/user_editor.svg" />
               <div class="select-value">
-                <span *ngIf="!optionFour">Select rol</span>
-                <span *ngIf="optionFour"> {{ optionFour | titlecase }}</span>
+                <span *ngIf="!optionFour">Example select</span>
+                <span *ngIf="optionFour"> {{ optionFour }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsTwo"
+                *ngFor="let opt of options"
                 (click)="optionFour = opt"
                 class="option"
                 [ngClass]="{ selected: optionFour === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="code-container" [ngClass]="{ hidden: !typeSelect }">
+      <pre>
+      <code class="html" Highlight>
+      &lt;!-- select-primary / select-outline / select-line / select-border-none --&gt;
+      &lt;div class="select select-primary active"&gt;
+        &lt;div class="select-container"&gt;
+          &lt;div class="select-trigger"&gt;
+            &lt;div class="select-value"&gt;
+              &lt;span&gt;1&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="options-container"&gt;
+            &lt;span class="option selected"&gt;1&lt;/span&gt;
+            &lt;span class="option"&gt;2&lt;/span&gt;
+            &lt;span class="option"&gt;3&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code>
+      </pre>
+    </div>
   </div>
-
-  <h6>No border Selects</h6>
-  <div class="wrapper-section">
-    <div class="row">
-      <div class="col s4">
+  <div class col="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <div class="subtitle">Variations</div>
+      <i class="fa fa-code" (click)="variationSelect = !variationSelect"></i>
+    </div>
+    <div class="container">
+      <div class="section-element">
+        <h4 class="sub-type">Primary outline</h4>
         <div
-          class="select select-border-none"
+          class="select select-primary select-outline"
           (click)="selectFive = !selectFive"
           [ngClass]="{ active: selectFive }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
               <div class="select-value">
-                <span *ngIf="!optionFive">Select rol</span>
-                <span *ngIf="optionFive"> {{ optionFive | titlecase }}</span>
+                <span *ngIf="!optionFive">Example select</span>
+                <span *ngIf="optionFive"> {{ optionFive }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsTwo"
+                *ngFor="let opt of options"
                 (click)="optionFive = opt"
                 class="option"
                 [ngClass]="{ selected: optionFive === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="col s4">
+
+      <div class="section-element">
+        <h4 class="sub-type">No border button + color text</h4>
         <div
           class="select select-border-none"
           (click)="selectSix = !selectSix"
           [ngClass]="{ active: selectSix }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
-              <img src="../../assets/icons/user_editor.svg" />
               <div class="select-value">
-                <span *ngIf="!optionSix" class="text-green">Select rol</span>
+                <span *ngIf="!optionSix" class="text-green"
+                  >Example select</span
+                >
                 <span *ngIf="optionSix" class="text-green">
-                  {{ optionSix | titlecase }}</span
+                  {{ optionSix }}</span
                 >
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsTwo"
+                *ngFor="let opt of options"
                 (click)="optionSix = opt"
                 class="option"
                 [ngClass]="{ selected: optionSix === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !variationSelect }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;!-- Primary outline --&gt;
+        &lt;div class="select select-primary select-outline"&gt;
+          &lt;div class="select-container"&gt;
+            &lt;div class="select-trigger"&gt;
+              &lt;div class="select-value"&gt;
+                &lt;span&gt;1&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="options-container"&gt;
+              &lt;span class="option selected"&gt;1&lt;/span&gt;
+              &lt;span class="option"&gt;2&lt;/span&gt;
+              &lt;span class="option"&gt;3&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- No border button + color text --&gt;
+        &lt;div class="select select-border-none"&gt;
+          &lt;div class="select-container"&gt;
+            &lt;div class="select-trigger"&gt;
+              &lt;div class="select-value"&gt;
+                &lt;span class="text-green"&gt;1&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="options-container"&gt;
+              &lt;span class="option selected"&gt;1&lt;/span&gt;
+              &lt;span class="option"&gt;2&lt;/span&gt;
+              &lt;span class="option"&gt;3&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        </pre>
+    </div>
   </div>
 
-  <h6>Line Selects</h6>
-  <div class="wrapper-section">
-    <div class="row">
-      <div class="col s4">
+  <div class col="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <div class="subtitle">Content</div>
+      <i class="fa fa-code" (click)="contentSelect = !contentSelect"></i>
+    </div>
+    <div class="container">
+      <div class="section-element">
+        <h4 class="sub-type">Icons</h4>
         <div
-          class="select select-line"
+          class="select select-outline"
           (click)="selectSeven = !selectSeven"
           [ngClass]="{ active: selectSeven }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
+              <i class="fa fa-user"></i>
               <div class="select-value">
-                <span *ngIf="!optionSevent">Select option</span>
-                <span *ngIf="optionFive"> {{ optionSeven }}</span>
+                <span *ngIf="!optionSeven">Example select</span>
+                <span *ngIf="optionSeven"> {{ optionSeven }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <span
-                *ngFor="let opt of optionsThree"
+                *ngFor="let opt of options"
                 (click)="optionSeven = opt"
                 class="option"
                 [ngClass]="{ selected: optionSeven === opt }"
@@ -214,33 +282,34 @@
           </div>
         </div>
       </div>
-      <div class="col s4">
+
+      <div class="section-element">
+        <h4 class="sub-type">Search Filter</h4>
         <div
           class="select select-line"
           (click)="selectEight = !selectEight"
           [ngClass]="{ active: selectEight }"
         >
-          <div class="select-wrapper">
+          <div class="select-container">
             <div class="select-trigger">
               <div class="select-value">
-                <span *ngIf="!optionEight">Select option</span>
-                <span *ngIf="optionEight"> {{ optionEight | titlecase }}</span>
+                <span *ngIf="!optionEight">Example select</span>
+                <span *ngIf="optionEight"> {{ optionEight }}</span>
               </div>
-              <div class="arrow"></div>
+              <div class="arrow arrow-open"></div>
             </div>
-            <div class="options-wrapper">
+            <div class="options-container">
               <div class="input input-outline">
-                <div class="wrapper-input">
+                <div class="input-container icon-right">
                   <input
+                    class="input-text"
                     type="text"
+                    placeholder="Search"
                     (click)="filterEvent($event)"
                     [(ngModel)]="filter"
                     (ngModelChange)="onChangeFilter()"
                   />
-                  <img
-                    class="icon icon-right"
-                    src="../../assets/icons/search_icon.svg"
-                  />
+                  <i class="fa fa-search"></i>
                 </div>
               </div>
               <span
@@ -248,12 +317,221 @@
                 (click)="optionEight = opt"
                 class="option"
                 [ngClass]="{ selected: optionEight === opt }"
-                >{{ opt | titlecase }}</span
+                >{{ opt }}</span
               >
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !contentSelect }">
+      <pre>
+          <code class="html" Highlight>
+          &lt;!-- Select with icon --&gt;
+          &lt;div class="select select-outline"&gt;
+            &lt;div class="select-container"&gt;
+              &lt;div class="select-trigger"&gt;
+                &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+                &lt;div class="select-value"&gt;
+                  &lt;span&gt;1&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="options-container"&gt;
+                &lt;span class="option selected"&gt;1&lt;/span&gt;
+                &lt;span class="option"&gt;2&lt;/span&gt;
+                &lt;span class="option"&gt;3&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+  
+          &lt;!-- Select with filter --&gt;
+          &lt;div class="select select-line"&gt;
+            &lt;div class="select-container"&gt;
+              &lt;div class="select-trigger"&gt;
+                &lt;div class="select-value"&gt;
+                  &lt;span class="text-green"&gt;1&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="options-container"&gt;
+                &lt;div class="input input-outline"&gt;
+                  &lt;div class="input-container icon-right"&gt;
+                    &lt;input class="input-text" placeholder="Search"/&gt;
+                    &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;span class="option selected"&gt;1&lt;/span&gt;
+                &lt;span class="option"&gt;2&lt;/span&gt;
+                &lt;span class="option"&gt;3&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          </pre>
+    </div>
+  </div>
+
+  <div class col="wrapper-section">
+    <div class="subtitle-container sm subtitle-icon">
+      <h4>Labels</h4>
+      <i class="fa fa-code" (click)="labelSelect = !labelSelect"></i>
+    </div>
+
+    <div class="container">
+      <div class="section-element">
+        <div
+          class="select select-outline"
+          (click)="selectNine = !selectNine"
+          [ngClass]="{ active: selectNine }"
+        >
+          <div class="select-container">
+            <label class="select-label upper">Label</label>
+            <div class="select-trigger">
+              <div class="select-value">
+                <span *ngIf="!optionNine">Example select</span>
+                <span *ngIf="optionNine"> {{ optionNine }}</span>
+              </div>
+              <div class="arrow arrow-open"></div>
+            </div>
+            <div class="options-container">
+              <span
+                *ngFor="let opt of options"
+                (click)="optionNine = opt"
+                class="option"
+                [ngClass]="{ selected: optionNine === opt }"
+                >{{ opt }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-element">
+        <div
+          class="select select-line"
+          (click)="selectTen = !selectTen"
+          [ngClass]="{ active: selectTen }"
+        >
+          <div class="select-container">
+            <label class="select-label">Label</label>
+            <div class="select-trigger">
+              <div class="select-value">
+                <span *ngIf="!optionTen">Example select</span>
+                <span *ngIf="optionTen"> {{ optionTen }}</span>
+              </div>
+              <div class="arrow arrow-open"></div>
+            </div>
+            <div class="options-container">
+              <span
+                *ngFor="let opt of options"
+                (click)="optionTen = opt"
+                class="option"
+                [ngClass]="{ selected: optionTen === opt }"
+                >{{ opt }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-element">
+        <div
+          class="select select-line"
+          (click)="selectEleven = !selectEleven"
+          [ngClass]="{ active: selectEleven }"
+        >
+          <div class="select-container">
+            <div class="title-container">
+              <label class="select-label">Label</label>
+              <label class="select-helper">helper</label>
+            </div>
+            <div class="select-trigger">
+              <div class="select-value">
+                <span *ngIf="!optionEleven">Example select</span>
+                <span *ngIf="optionEleven"> {{ optionEleven }}</span>
+              </div>
+              <div class="arrow arrow-open"></div>
+            </div>
+            <div class="options-container">
+              <span
+                *ngFor="let opt of options"
+                (click)="optionEleven = opt"
+                class="option"
+                [ngClass]="{ selected: optionEleven === opt }"
+                >{{ opt }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !labelSelect }">
+      <pre>
+      <code class="html" Highlight>
+      &lt;div class="container"&gt;
+
+        &lt;!-- Basic label (select-outline) --&gt;
+        &lt;div class="select select-outline"&gt;
+          &lt;div class="select-container"&gt;
+            &lt;label class="select-label upper"&gt;Label&lt;/label&gt;
+            &lt;div class="select-trigger"&gt;
+              &lt;div class="select-value"&gt;
+                &lt;span&gt;1&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="options-container"&gt;
+              &lt;span class="option selected"&gt;1&lt;/span&gt;
+              &lt;span class="option"&gt;2&lt;/span&gt;
+              &lt;span class="option"&gt;3&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Label (select-line) --&gt;
+        &lt;div class="select select-line"&gt;
+          &lt;div class="select-container"&gt;
+            &lt;label class="select-label"&gt;Label&lt;/label&gt;
+            &lt;div class="select-trigger"&gt;
+              &lt;div class="select-value"&gt;
+                &lt;span&gt;1&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="options-container"&gt;
+              &lt;span class="option selected"&gt;1&lt;/span&gt;
+              &lt;span class="option"&gt;2&lt;/span&gt;
+              &lt;span class="option"&gt;3&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Label + Helper (select-line) --&gt;
+        &lt;div class="select select-line"&gt;
+          &lt;div class="select-container"&gt;
+            &lt;div class="title-container"&gt;
+              &lt;label class="select-label"&gt;Label&lt;/label&gt;
+              &lt;label class="select-helper"&gt;helper&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="select-trigger"&gt;
+              &lt;div class="select-value"&gt;
+                &lt;span&gt;1&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class="arrow arrow-open"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="options-container"&gt;
+              &lt;span class="option selected"&gt;1&lt;/span&gt;
+              &lt;span class="option"&gt;2&lt;/span&gt;
+              &lt;span class="option"&gt;3&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code>
+      </pre>
     </div>
   </div>
 </div>
