@@ -8,9 +8,9 @@ import { Component, OnInit } from "@angular/core";
 export class ButtonComponent implements OnInit {
   containBtnDisplay: boolean = false;
   outlineBtnDisplay: boolean = false;
-  linkBtnDisplay: boolean = false;
   destructiveBtnDisplay: boolean = false;
   noBorderBtnDisplay: boolean = false;
+  iconsBtnDisplay: boolean = false;
   sizesBtnDisplay: boolean = false;
   squareBtnDisplay: boolean = false;
   rectangleBtnDisplay: boolean = false;

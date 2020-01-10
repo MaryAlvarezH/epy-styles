@@ -1,52 +1,244 @@
 <div>
-  <h4>Inputs</h4>
+  <h1>Inputs</h1>
   <hr />
+  <div class="subtitle-container">
+    <div class="subtitle">Types</div>
+  </div>
   <div class="wrapper-section">
-    <h6>Outline</h6>
+    <div class="subtitle-container subtitle-icon">
+      <h4>Line</h4>
+      <i class="fa fa-code" (click)="lineInput = !lineInput"></i>
+    </div>
     <div class="container">
-      <div class="input input-outline">
-        <div class="wrapper-input">
-          <input type="text" placeholder="Campaign name" />
+      <div class="input input-line">
+        <div class="input-container">
+          <input class="input-text" type="text" value="input line" />
         </div>
       </div>
-      <div class="input input-outline">
-        <div class="wrapper-input">
-          <img
-            class="icon icon-left"
-            src="../../assets/icons/search_icon.svg"
+
+      <div class="input input-line validate">
+        <div class="input-container">
+          <input
+            class="input-text"
+            type="email"
+            placeholder="email validation"
           />
-          <input type="text" />
         </div>
       </div>
-      <div class="input input-outline">
-        <div class="wrapper-input">
-          <input type="text" />
-          <img
-            class="icon icon-right"
-            src="../../assets/icons/search_icon.svg"
+
+      <div class="input input-line validate">
+        <div class="input-container">
+          <input
+            class="input-text invalid"
+            type="email"
+            placeholder="invalid"
+          />
+        </div>
+      </div>
+
+      <div class="input input-line">
+        <div class="input-container">
+          <input
+            class="input-text disabled"
+            type="email"
+            placeholder="disabled"
           />
         </div>
       </div>
     </div>
 
-    <h6>Line</h6>
+    <div class="code-container" [ngClass]="{ hidden: !lineInput }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="container"&gt;
+          &lt;div class="input input-line"&gt;
+            &lt;div class="input-container"&gt;
+              &lt;input class="input-text" type="text" value="input outline" /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      
+          &lt;div class="input input-line validate"&gt;
+            &lt;div class="input-container"&gt;
+              &lt;input
+                class="input-text"
+                type="email"
+                placeholder="email validation"
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+      
+          &lt;div class="input input-line validate"&gt;
+            &lt;div class="input-container"&gt;
+              &lt;input
+                class="input-text invalid"
+                type="email"
+                placeholder="invalid"
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="input input-line"&gt;
+            &lt;div class="input-container"&gt;
+              &lt;input
+                class="input-text disabled"
+                type="email"
+                placeholder="disabled"
+              /&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+          </code>
+        </pre>
+    </div>
+  </div>
+
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Outline</h4>
+      <i class="fa fa-code" (click)="outlineInput = !outlineInput"></i>
+    </div>
     <div class="container">
-      <div class="input input-line">
-        <div class="wrapper-input">
-          <input type="text" />
+      <div class="input input-outline">
+        <div class="input-container">
+          <input class="input-text" type="text" value="input outline" />
         </div>
       </div>
-      <div class="input input-line">
-        <div class="wrapper-input">
-          <input type="email" placeholder="email" value="1234" />
+
+      <div class="input input-outline validate">
+        <div class="input-container">
+          <input
+            class="input-text"
+            type="email"
+            placeholder="email validation"
+          />
         </div>
       </div>
-      <div class="input input-line">
-        <div class="wrapper-input">
-          <input type="email" placeholder="search" />
-          <img class="icon" src="./assets/icons/search_icon.svg" />
+
+      <div class="input input-outline validate">
+        <div class="input-container">
+          <input
+            class="input-text invalid"
+            type="email"
+            placeholder="invalid"
+          />
         </div>
       </div>
+
+      <div class="input input-outline">
+        <div class="input-container">
+          <input
+            class="input-text disabled"
+            type="email"
+            placeholder="disabled"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !outlineInput }">
+      <pre>
+          <code class="html" Highlight>
+          &lt;div class="container"&gt;
+            &lt;div class="input input-outline"&gt;
+              &lt;div class="input-container"&gt;
+                &lt;input class="input-text" type="text" value="input outline" /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="input input-outline validate"&gt;
+              &lt;div class="input-container"&gt;
+                &lt;input
+                  class="input-text"
+                  type="email"
+                  placeholder="email validation"
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="input input-outline validate"&gt;
+              &lt;div class="input-container"&gt;
+                &lt;input
+                  class="input-text invalid"
+                  type="email"
+                  placeholder="invalid"
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="input input-outline"&gt;
+              &lt;div class="input-container"&gt;
+                &lt;input
+                class="input-text disabled"
+                type="email"
+                placeholder="disabled"
+                /&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+        </pre>
+    </div>
+  </div>
+
+  <div class="subtitle-container">
+    <div class="subtitle">Content</div>
+  </div>
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Icons</h4>
+      <i class="fa fa-code" (click)="iconInput = !iconInput"></i>
+    </div>
+    <!-- Line Buttons -->
+    <div class="container">
+      <div class="input input-line validate">
+        <div class="input-container icon-left">
+          <i class="fa fa-at leading-icon"></i>
+          <input class="input-text" type="email" placeholder="left icon" />
+        </div>
+      </div>
+
+      <div class="input input-line validate">
+        <div class="input-container icon-right">
+          <input class="input-text" type="email" placeholder="right icon" />
+          <i class="fa fa-at leading-icon"></i>
+        </div>
+      </div>
+
+      <div class="input input-line validate">
+        <div class="input-container icons-sides">
+          <i class="fa fa-user left"></i>
+          <input class="input-text" type="email" placeholder="icons-sides" />
+          <i class="fa fa-times right"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !iconInput }">
+      <pre>
+      <code class="html" Highlight>
+      &lt;div class="container"&gt;
+        &lt;div class="input input-line validate"&gt;
+          &lt;div class="input-container icon-left"&gt;
+            &lt;i class="fa fa-at leading-icon"&gt;&lt;/i&gt;
+            &lt;input class="input-text" type="email" placeholder="left icon" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;div class="input input-line validate"&gt;
+          &lt;div class="input-container icon-right"&gt;
+            &lt;input class="input-text" type="email" placeholder="right icon" /&gt;
+            &lt;i class="fa fa-at leading-icon"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;div class="input input-line validate"&gt;
+          &lt;div class="input-container icons-sides"&gt;
+            &lt;i class="fa fa-user left"&gt;&lt;/i&gt;
+            &lt;input class="input-text" type="email" placeholder="icons-sides" /&gt;
+            &lt;i class="fa fa-times right"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code>
+      </pre>
     </div>
   </div>
 </div>
