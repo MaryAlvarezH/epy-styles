@@ -13,7 +13,10 @@ export class LoaderComponent implements OnInit {
   public statLoader2: boolean;
   public divideLoader: boolean;
   public campaignLoader: boolean;
+  public campaignDetailsLoader: boolean;
+  public budgetLoader: boolean;
   public progressLoader: boolean;
+  public progressValue: Number = 10;
 
   constructor() {}
 

@@ -1,134 +1,241 @@
 <div>
   <h1>Loaders</h1>
   <hr />
+
+  <!-- Bot loader -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Bot loader</h4>
       <i class="fa fa-code" (click)="botLoader = !botLoader"></i>
     </div>
     <div class="epy-row">
-      <div class="col-1">
+      <div class="col-1 col-2-m col-4-s">
         <div class="bot-loader"></div>
       </div>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !botLoader }">
       <pre>
+      <code class="html" Highlight>
+      &lt;div class="bot-loader"&gt;&lt;/div&gt;
+      </code>
+      </pre>
+    </div>
+  </div>
+
+  <!-- Bar loader -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Bar loader</h4>
+      <i class="fa fa-code" (click)="barLoader = !barLoader"></i>
+    </div>
+    <div class="epy-row">
+      <div class="wrapper">
+        <span>bar loader (100%)</span>
+        <div class="bar-loader"></div>
+        <span>bar loader title (25%)</span>
+        <div class="bar-loader title"></div>
+        <span>bar loader subtitle (20%)</span>
+        <div class="bar-loader subtitle"></div>
+        <span>bar loader detail (92px)</span>
+        <div class="bar-loader detail"></div>
+        <span>bar loader detail dark</span>
+        <div class="bar-loader detail dark"></div>
+      </div>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !barLoader }">
+      <pre>
         <code class="html" Highlight>
-        &lt;div class="bot-loader"&gt;&lt;/div&gt;
+        &lt;div class="bar-loader"&gt;&lt;/div&gt;
+        &lt;div class="bar-loader title"&gt;&lt;/div&gt;
+        &lt;div class="bar-loader subtitle"&gt;&lt;/div&gt;
+        &lt;div class="bar-loader detail"&gt;&lt;/div&gt;
+        &lt;div class="bar-loader detail dark"&gt;&lt;/div&gt;
         </code>
         </pre>
     </div>
+  </div>
 
-    <div class="wrapper-section">
-      <div class="subtitle-container subtitle-icon">
-        <h4>Bar loader</h4>
-        <i class="fa fa-code" (click)="barLoader = !barLoader"></i>
-      </div>
-      <div class="epy-row">
-        <div class="wrapper">
-          <span>bar loader (100%)</span>
+  <!-- Grid bar loader -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Grid bar loader</h4>
+      <i class="fa fa-code" (click)="gridLoader = !gridLoader"></i>
+    </div>
+    <div class="epy-row">
+      <div class="col-4 col-4-m col-4-s">
+        <span>table-loader col2</span>
+        <div class="table-loader col2">
           <div class="bar-loader"></div>
-          <span>bar loader title (25%)</span>
-          <div class="bar-loader title"></div>
-          <span>bar loader subtitle (20%)</span>
-          <div class="bar-loader subtitle"></div>
-          <span>bar loader detail (92px)</span>
-          <div class="bar-loader detail"></div>
-          <span>bar loader detail dark</span>
-          <div class="bar-loader detail dark"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
         </div>
       </div>
-      <div class="code-container" [ngClass]="{ hidden: !barLoader }">
-        <pre>
-            <code class="html" Highlight>
+      <div class="col-4 col-4-m col-4-s">
+        <span>table-loader col3</span>
+        <div class="table-loader col3">
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+        </div>
+      </div>
+      <div class="col-4 col-4-m col-4-s">
+        <span>table-loader col4</span>
+        <div class="table-loader col4">
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+        </div>
+      </div>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !gridLoader }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;!-- Two Colums --&gt;
+        &lt;div class="table-loader col2"&gt;
           &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Three Colums --&gt;
+        &lt;div class="table-loader col3"&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Four Colums --&gt;
+        &lt;div class="table-loader col4"&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        </pre>
+    </div>
+  </div>
+
+  <h2>Templates</h2>
+  <hr />
+
+  <!-- Stat loader -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Stat loader</h4>
+      <i class="fa fa-code" (click)="statLoader = !statLoader"></i>
+    </div>
+    <div class="epy-row">
+      <div class="stat-loader">
+        <div class="bar-loader title"></div>
+        <div class="bar-loader subtitle"></div>
+        <div class="table-loader col5">
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+        </div>
+
+        <div class="bar-loader chart-loader">
+          <div class="chart-stroke-1"></div>
+          <div class="chart-stroke-2"></div>
+          <div class="chart-stroke-3"></div>
+          <div class="chart-stroke-4"></div>
+          <div class="chart-stroke-5"></div>
+          <div class="chart-stroke-6"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !statLoader }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="stat-loader"&gt;
           &lt;div class="bar-loader title"&gt;&lt;/div&gt;
           &lt;div class="bar-loader subtitle"&gt;&lt;/div&gt;
-          &lt;div class="bar-loader detail"&gt;&lt;/div&gt;
-          &lt;div class="bar-loader detail dark"&gt;&lt;/div&gt;
-          </code>
+          &lt;div class="table-loader col5"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="bar-loader chart-loader"&gt;
+            &lt;div class="chart-stroke-1"&gt;&lt;/div&gt;
+            &lt;div class="chart-stroke-2"&gt;&lt;/div&gt;
+            &lt;div class="chart-stroke-3"&gt;&lt;/div&gt;
+            &lt;div class="chart-stroke-4"&gt;&lt;/div&gt;
+            &lt;div class="chart-stroke-5"&gt;&lt;/div&gt;
+            &lt;div class="chart-stroke-6"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
         </pre>
-      </div>
     </div>
+  </div>
 
-    <div class="wrapper-section">
-      <div class="subtitle-container subtitle-icon">
-        <h4>Grid bar loader</h4>
-        <i class="fa fa-code" (click)="gridLoader = !gridLoader"></i>
-      </div>
-      <div class="epy-row">
-        <div class="col-4">
-          <span>table-loader col2</span>
-          <div class="table-loader col2">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-          </div>
-        </div>
-        <div class="col-4">
-          <span>table-loader col3</span>
-          <div class="table-loader col3">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-          </div>
-        </div>
-        <div class="col-4">
-          <span>table-loader col4</span>
-          <div class="table-loader col4">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-          </div>
-        </div>
-      </div>
-      <div class="code-container" [ngClass]="{ hidden: gridLoader }">
-        <pre>
-          <code class="html" HightLight>
-          <!-- Two Colums -->
-          <!-- <div class="table-loader col2">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-          </div> -->
-          </code>
-        </pre>
-      </div>
+  <!-- Stat loader v2 -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Stat loader v2</h4>
+      <i class="fa fa-code" (click)="statLoader2 = !statLoader2"></i>
     </div>
-
-    <h2>Templates</h2>
-    <hr />
-
-    <div class="wrapper-section">
-      <div class="subtitle-container subtitle-icon">
-        <h4>Stat Loader (Template)</h4>
-        <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
-      </div>
-      <div class="row">
-        <div class="stat-loader">
-          <div class="bar-loader title"></div>
-          <div class="bar-loader subtitle"></div>
-          <div class="table-loader col5">
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
-            <div class="bar-loader"></div>
+    <div class="epy-row">
+      <div class="stat-loader-2">
+        <div class="divided-loader">
+          <div class="title-loader">
+            <div class="bar-loader content-large"></div>
+            <div class="bar-loader content-large"></div>
+          </div>
+          <div class="table-loader-container">
+            <div class="table-loader col1">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+            <div class="bar-divider"></div>
+            <div class="table-loader col1">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+            <div class="bar-divider"></div>
+            <div class="table-loader col1">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+            <div class="bar-divider"></div>
+            <div class="table-loader col1">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
           </div>
 
           <div class="bar-loader chart-loader">
@@ -143,14 +250,327 @@
       </div>
     </div>
 
-    <div class="wrapper-section">
-      <div class="subtitle-container subtitle-icon">
-        <h4>Progress Bar</h4>
-        <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+    <div class="code-container" [ngClass]="{ hidden: !statLoader2 }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="stat-loader-2"&gt;
+            &lt;div class="divided-loader"&gt;
+              &lt;div class="title-loader"&gt;
+                &lt;div class="bar-loader content-large"&gt;&lt;/div&gt;
+                &lt;div class="bar-loader content-large"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="table-loader-container"&gt;
+                &lt;div class="table-loader col1"&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bar-divider"&gt;&lt;/div&gt;
+                &lt;div class="table-loader col1"&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bar-divider"&gt;&lt;/div&gt;
+                &lt;div class="table-loader col1"&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="bar-divider"&gt;&lt;/div&gt;
+                &lt;div class="table-loader col1"&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                  &lt;div class="bar-loader"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+  
+              &lt;div class="bar-loader chart-loader"&gt;
+                &lt;div class="chart-stroke-1"&gt;&lt;/div&gt;
+                &lt;div class="chart-stroke-2"&gt;&lt;/div&gt;
+                &lt;div class="chart-stroke-3"&gt;&lt;/div&gt;
+                &lt;div class="chart-stroke-4"&gt;&lt;/div&gt;
+                &lt;div class="chart-stroke-5"&gt;&lt;/div&gt;
+                &lt;div class="chart-stroke-6"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+          </pre>
+    </div>
+  </div>
+
+  <!-- Campaign loader -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Campaign loader</h4>
+      <i class="fa fa-code" (click)="campaignLoader = !campaignLoader"></i>
+    </div>
+    <div class="epy-row">
+      <div class="campaign-loader">
+        <div class="title-container">
+          <div class="title-loader">
+            <div class="bar-loader content-large"></div>
+            <div class="bar-loader content-large"></div>
+          </div>
+          <div class="circle-loader"></div>
+        </div>
+        <div class="table-loader col4">
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+          <div class="bar-loader"></div>
+        </div>
       </div>
-      <div class="row">
-        <progress max="100" value="10"></progress>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !campaignLoader }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;div class="campaign-loader"&gt;
+          &lt;div class="title-container"&gt;
+            &lt;div class="title-loader"&gt;
+              &lt;div class="bar-loader content-large"&gt;&lt;/div&gt;
+              &lt;div class="bar-loader content-large"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="circle-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="table-loader col4"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        </pre>
+    </div>
+  </div>
+
+  <!-- Campaign details loader -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Campaign details loader</h4>
+      <i
+        class="fa fa-code"
+        (click)="campaignDetailsLoader = !campaignDetailsLoader"
+      ></i>
+    </div>
+    <div class="epy-row">
+      <div class="col-12 col-8-m col-4-s">
+        <div class="campaign-details-loader">
+          <div class="title-container">
+            <div class="title-loader">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+            <div class="title-loader">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+            <div class="circle-loader"></div>
+          </div>
+          <div class="details-container">
+            <div class="table-loader col2">
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+              <div class="bar-loader"></div>
+            </div>
+
+            <div class="line-details">
+              <div class="bar-loader"></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !campaignDetailsLoader }">
+      <pre>
+      <code class="html" Highlight>
+      &lt;div class="campaign-details-loader"&gt;
+        &lt;div class="title-container"&gt;
+          &lt;div class="title-loader"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="title-loader"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="circle-loader"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="details-container"&gt;
+          &lt;div class="table-loader col2"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="line-details"&gt;
+            &lt;div class="bar-loader"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code>
+      </pre>
+    </div>
+  </div>
+
+  <!-- Budget loader-->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Budget loader</h4>
+      <i class="fa fa-code" (click)="budgetLoader = !budgetLoader"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-12 col-8-m col-4-s">
+        <div class="budget-loader">
+          <div class="title-container">
+            <div class="bar-loader title"></div>
+            <div class="bar-loader detail"></div>
+            <div class="bar-loader detail"></div>
+          </div>
+          <div class="budget-details">
+            <div class="bar-loader title"></div>
+            <div class="budget-days">
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+              <div class="day"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !budgetLoader }">
+      <pre>
+      <code class="html" Highlight>
+      &lt;div class="budget-loader"&gt;
+        &lt;div class="title-container"&gt;
+          &lt;div class="bar-loader title"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader detail"&gt;&lt;/div&gt;
+          &lt;div class="bar-loader detail"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="budget-details"&gt;
+          &lt;div class="bar-loader title"&gt;&lt;/div&gt;
+          &lt;div class="budget-days"&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+            &lt;div class="day"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      </code>
+      </pre>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="wrapper-section">
+    <div class="subtitle-container subtitle-icon">
+      <h4>Progress bar</h4>
+      <i class="fa fa-code" (click)="progressLoader = !progressLoader"></i>
+    </div>
+    <div class="epy-row">
+      <progress max="100" [value]="progressValue"></progress>
+
+      <div class="epy-row">
+        <div class="col1">
+          <div class="progress-value">
+            <div class="input input-line validate">
+              <div class="input-container">
+                <input
+                  class="input-text"
+                  type="number"
+                  placeholder="new progress value"
+                  [(ngModel)]="progressValue"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !progressLoader }">
+      <pre>
+        <code class="html" Highlight>
+        &lt;progress max="100" value="10"&gt;&lt;/progress&gt;
+        </code>
+        </pre>
     </div>
   </div>
 </div>
