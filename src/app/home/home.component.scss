@@ -1,4 +1,17 @@
 @import "../../styles.scss";
+
+.header {
+  background: #22b5b5;
+  box-shadow: $x-large-shadow;
+  height: 48px;
+
+  .header-title {
+    color: $white;
+    font-size: 24px;
+    padding: 8px 8px 8px 32px;
+  }
+}
+
 .dashboard {
   column-gap: 8px;
   display: grid;
@@ -8,28 +21,42 @@
 }
 
 .menu,
+.menu-small,
 .main-section {
   box-shadow: $x-large-shadow;
   overflow-y: auto;
 }
+.menu-small {
+  display: none;
+}
+
 .menu {
   background-color: $albaster;
   padding: 50px;
 }
+
+.menu-small {
+  background-color: $albaster;
+}
+
 .main-section {
   padding: 20px 15%;
 }
 
-.header {
-  height: 48px;
-  background: #22b5b5;
-  box-shadow: $x-large-shadow;
+@media screen and (max-width: 48em) {
+  .menu {
+    display: none !important;
+  }
 
-  // background: linear-gradient(90deg, #26c580 0%, #22b5b5 100%);
+  .menu-small {
+    display: block;
+  }
 
-  .header-title {
-    color: $white;
-    font-size: 24px;
-    padding: 8px 8px 8px 32px;
+  .dashboard {
+    grid-template-columns: 64px 1fr;
+
+    &.smallMenuActive {
+      grid-template-columns: 0.7fr 1fr;
+    }
   }
 }
