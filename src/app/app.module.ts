@@ -15,24 +15,33 @@ import { HighlightDirective } from './highlight.directive';
 import { ClipboardModule } from 'ngx-clipboard';
 import { GridComponent } from './grid/grid.component';
 import { CardComponent } from './card/card.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AsideMenuComponent,
-    ButtonComponent,
-    FontColorComponent,
-    InputComponent,
-    SelectComponent,
-    TooltipComponent,
-    LoaderComponent,
-    HighlightDirective,
-    GridComponent,
-    CardComponent
-  ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ClipboardModule],
-  providers: [],
-  bootstrap: [AppComponent]
+   declarations: [
+      AppComponent,
+      HomeComponent,
+      AsideMenuComponent,
+      ButtonComponent,
+      FontColorComponent,
+      InputComponent,
+      SelectComponent,
+      TooltipComponent,
+      LoaderComponent,
+      HighlightDirective,
+      GridComponent,
+      CardComponent,
+      IconsComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      FormsModule,
+      ClipboardModule
+   ],
+   providers: [],
+   bootstrap: [
+      AppComponent
+   ]
 })
 export class AppModule {}

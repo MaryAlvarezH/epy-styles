@@ -1,0 +1,22 @@
+.icon-show {
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+span.mono {
+  font-size: 1rem;
+}
+
+.all-icons {
+  display: grid;
+  grid-column: auto;
+  width: 100%;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px 10px;
+  grid-gap: 24px 10px;
+  /* margin: auto; */
+  margin-top: 24px;
+}

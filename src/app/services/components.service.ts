@@ -13,7 +13,8 @@ export class ComponentsService {
     "tooltips",
     "loaders",
     "grid",
-    "cards"
+    "cards",
+    "icons"
   ];
 
   public selectedComponent: number = 0;
