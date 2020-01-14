@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./tooltip.component.scss"]
 })
 export class TooltipComponent implements OnInit {
+  public tooltipDisplay: boolean;
   public tooltipActive: boolean;
   public tooltipActiveTwo: boolean;
 

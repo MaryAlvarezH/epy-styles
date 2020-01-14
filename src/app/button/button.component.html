@@ -4,6 +4,8 @@
   <div class="subtitle-container">
     <div class="subtitle">Types</div>
   </div>
+
+  <!-- Contained -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Contained Buttons</h4>
@@ -12,43 +14,50 @@
         (click)="containBtnDisplay = !containBtnDisplay"
       ></i>
     </div>
-    <div class="container">
-      <button class="btn btn-default">
-        default
-      </button>
-      <button class="btn btn-primary">
-        primary
-      </button>
-      <button class="btn btn-primary" disabled>
-        disabled
-      </button>
-      <button class="btn btn-primary disabled">
-        disabled
-      </button>
+    <div class="epy-row">
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-default">
+          default
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary">
+          primary
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary" disabled>
+          disabled
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary disabled">
+          disabled
+        </button>
+      </div>
     </div>
 
     <div class="code-container" [ngClass]="{ hidden: !containBtnDisplay }">
       <pre>
         <code class="html" Highlight>
-        &lt;div class="container"&gt;
-            &lt;button class="btn btn-default"&gt;
-                default
-            &lt;/button&gt;
-            &lt;button class="btn btn-primary"&gt;
-                primary
-            &lt;/button&gt;
-            &lt;button class="btn btn-primary" disabled&gt;
-                disabled
-            &lt;/button&gt;
-            &lt;button class="btn btn-primary disabled"&gt;
-                disabled
-            &lt;/button&gt;
-        &lt;/div&gt;
+          &lt;button class="btn btn-default"&gt;
+              default
+          &lt;/button&gt;
+          &lt;button class="btn btn-primary"&gt;
+              primary
+          &lt;/button&gt;
+          &lt;button class="btn btn-primary" disabled&gt;
+              disabled
+          &lt;/button&gt;
+          &lt;button class="btn btn-primary disabled"&gt;
+              disabled
+          &lt;/button&gt;
         </code>
         </pre>
     </div>
   </div>
 
+  <!-- Outlined -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Outlined Buttons</h4>
@@ -57,48 +66,57 @@
         (click)="outlineBtnDisplay = !outlineBtnDisplay"
       ></i>
     </div>
-    <div class="container">
-      <button class="btn btn-outline">
-        outline
-      </button>
-      <button class="btn btn-primary btn-outline">
-        primary outline
-      </button>
-      <button class="btn btn-primary btn-outline" disabled>
-        disabled
-      </button>
-      <button class="btn btn-primary btn-outline disabled">
-        disabled
-      </button>
-      <button class="btn btn-destructive btn-outline">
-        destructive
-      </button>
+    <div class="epy-row">
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-outline">
+          outline
+        </button>
+      </div>
+      <div class="col-3 col-3-m col-2-s">
+        <button class="btn btn-primary btn-outline">
+          primary outline
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary btn-outline" disabled>
+          disabled
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary btn-outline disabled">
+          disabled
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-destructive btn-outline">
+          destructive
+        </button>
+      </div>
     </div>
-
     <div class="code-container" [ngClass]="{ hidden: !outlineBtnDisplay }">
       <pre>
-            <code class="html" Highlight>
-            &lt;div class="container"&gt;
-                &lt;button class="btn btn-outline"&gt;
-                    outline
-                &lt;/button&gt;
-                &lt;button class="btn btn-primary btn-outline"&gt;
-                    primary outline
-                &lt;/button&gt;
-                &lt;button class="btn btn-primary btn-outline" disabled&gt;
-                    disabled
-                &lt;/button&gt;
-                &lt;button class="btn btn-primary btn-outline disabled"&gt;
-                  disabled
-                &lt;/button&gt;
-                &lt;button class="btn btn-destructive btn-outline"&gt;
-                    destructive
-                &lt;/button&gt;
-            &lt;/div&gt;
-            </code>
-        </pre>
+      <code class="html" Highlight>
+      &lt;button class="btn btn-outline"&gt;
+          outline
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary btn-outline"&gt;
+          primary outline
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary btn-outline" disabled&gt;
+          disabled
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary btn-outline disabled"&gt;
+        disabled
+      &lt;/button&gt;
+      &lt;button class="btn btn-destructive btn-outline"&gt;
+          destructive
+      &lt;/button&gt;
+      </code>
+      </pre>
     </div>
   </div>
+
+  <!-- Destructive -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Destructive Buttons</h4>
@@ -107,13 +125,17 @@
         (click)="destructiveBtnDisplay = !destructiveBtnDisplay"
       ></i>
     </div>
-    <div class="container">
-      <button class="btn btn-destructive">
-        destructive
-      </button>
-      <button class="btn btn-destructive btn-outline">
-        destructive
-      </button>
+    <div class="epy-row">
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-destructive">
+          destructive
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-destructive btn-outline">
+          destructive
+        </button>
+      </div>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !destructiveBtnDisplay }">
       <pre>
@@ -122,19 +144,18 @@
           ngxClipboard [cbContent]="'Text to be copied'"
         ></i>
         <code class="html" Highlight>
-        &lt;div class="container"&gt;
-            &lt;button class="btn btn-destructive"&gt;
-            destructive
-            &lt;/button&gt;
-            &lt;button class="btn btn-destructive btn-outline"&gt;
-            destructive
-            &lt;/button&gt;
-        &lt;/div&gt;
+        &lt;button class="btn btn-destructive"&gt;
+          destructive
+        &lt;/button&gt;
+        &lt;button class="btn btn-destructive btn-outline"&gt;
+          destructive
+        &lt;/button&gt;
         </code>
         </pre>
     </div>
   </div>
 
+  <!-- No border & Links -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>No border Buttons & Links</h4>
@@ -143,53 +164,37 @@
         (click)="noBorderBtnDisplay = !noBorderBtnDisplay"
       ></i>
     </div>
-    <div class="container">
-      <button class="btn btn-border-none">
-        No border button
-      </button>
-      <button class="btn btn-border-none">
-        <span class="text-green">No border button</span>
-      </button>
-      <button class="btn btn-link">
-        link
-      </button>
+    <div class="epy-row">
+      <div class="col-2 col-3-m col-4-s">
+        <button class="btn btn-border-none">
+          No border button
+        </button>
+      </div>
+      <div class="col-2 col-3-m col-4-s">
+        <button class="btn btn-border-none">
+          <span class="text-green">No border button</span>
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-link">
+          link
+        </button>
+      </div>
     </div>
-
-    <!-- <div class="container">
-      <button class="btn btn-border-none">
-        Create a new campaign
-      </button>
-      <div class="btn btn-border-none btn-icon" style="width:200px">
-        <img
-          class="icon"
-          src="../../assets/icons/create_campaign_icon_on.svg"
-        />
-        <span class="text">Create a new campaign</span>
-      </div>
-      <div class="btn btn-border-none btn-icon" style="width:200px">
-        <span class="text">Create a new campaign</span>
-        <img
-          class="icon"
-          src="../../assets/icons/create_campaign_icon_on.svg"
-        />
-      </div>
-    </div> -->
     <div class="code-container" [ngClass]="{ hidden: !noBorderBtnDisplay }">
       <pre>
-          <code class="html" Highlight>
-          &lt;div class="container"&gt;
-            &lt;button class="btn btn-border-none"&gt;
-                No border button
-              &lt;/button&gt;
-              &lt;button class="btn btn-border-none"&gt;
-                &lt;span class="text-green"&gt;No border button&lt;/span&gt;
-              &lt;/button&gt;
-              &lt;button class="btn btn-link"&gt;
-                link
-              &lt;/button&gt;
-          &lt;/div&gt;
-          </code>
-          </pre>
+      <code class="html" Highlight>
+        &lt;button class="btn btn-border-none"&gt;
+            No border button
+        &lt;/button&gt;
+        &lt;button class="btn btn-border-none"&gt;
+          &lt;span class="text-green"&gt;No border button&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;button class="btn btn-link"&gt;
+          link
+        &lt;/button&gt;
+        </code>
+        </pre>
     </div>
   </div>
 
@@ -197,118 +202,119 @@
     <div class="subtitle">Content</div>
   </div>
 
+  <!-- Icons -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Icons</h4>
       <i class="fa fa-code" (click)="iconsBtnDisplay = !iconsBtnDisplay"></i>
     </div>
-    <div class="container">
-      <button class="btn btn-primary">
-        <i class="fa fa-edit left"></i> primary
-      </button>
-      <button class="btn btn-primary">
-        primary <i class="fa fa-edit right"></i>
-      </button>
-      <button class="btn btn-primary">
-        <i class="fa fa-edit left"></i> primary <i class="fa fa-user right"></i>
-      </button>
+    <div class="epy-row">
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary">
+          <i class="fa fa-edit left"></i> primary
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary">
+          primary <i class="fa fa-edit right"></i>
+        </button>
+      </div>
+      <div class="col-2 col-2-m col-2-s">
+        <button class="btn btn-primary">
+          <i class="fa fa-edit left"></i> primary
+          <i class="fa fa-user right"></i>
+        </button>
+      </div>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !iconsBtnDisplay }">
       <pre>
-            <code class="html" Highlight>
-            &lt;div class="container"&gt;
-              &lt;button class="btn btn-primary"&gt;
-                &lt;i class="fa fa-edit left"&gt;&lt;/i&gt; primary
-              &lt;/button&gt;
-              &lt;button class="btn btn-primary"&gt;
-                primary &lt;i class="fa fa-edit right"&gt;&lt;/i&gt;
-              &lt;/button&gt;
-              &lt;button class="btn btn-primary"&gt;
-                &lt;i class="fa fa-edit left"&gt;&lt;/i&gt;
-                primary
-                &lt;i class="fa fa-user right"&gt;&lt;/i&gt;
-              &lt;/button&gt;
-            &lt;/div&gt;
-            </code>
-            </pre>
+      <code class="html" Highlight>
+      &lt;button class="btn btn-primary"&gt;
+        &lt;i class="fa fa-edit left"&gt;&lt;/i&gt; primary
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary"&gt;
+        primary &lt;i class="fa fa-edit right"&gt;&lt;/i&gt;
+      &lt;/button&gt;
+      &lt;button class="btn btn-primary"&gt;
+        &lt;i class="fa fa-edit left"&gt;&lt;/i&gt;
+        primary
+        &lt;i class="fa fa-user right"&gt;&lt;/i&gt;
+      &lt;/button&gt;
+      </code>
+      </pre>
     </div>
   </div>
 
-  <!-- <div class="subtitle-container">
-    <span class="subtitle">Sizes</span>
-  </div>
-  <div class="wrapper-section">
-    <div class="container">
-      <button class="btn btn-primary btn-tight">
-        tight
-      </button>
-      <button class="btn btn-primary btn-small">
-        small
-      </button>
-      <button class="btn btn-primary">
-        default
-      </button>
-      <button class="btn btn-primary btn-large">
-        large
-      </button>
-    </div>
-  </div> -->
+  <!-- Square -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Square Buttons</h4>
       <i class="fa fa-code" (click)="squareBtnDisplay = !squareBtnDisplay"></i>
     </div>
 
-    <div class="container">
-      <button class="btn btn-square-small">
-        <img class="icon" src="../../assets/icons/change_card.svg" />
-      </button>
-      <button class="btn btn-square-small btn-info">
-        <img class="icon" src="../../assets/icons/change_table.svg" />
-      </button>
-      <button class="btn btn-square btn-default">
-        <img class="icon" src="../../assets/google-merchant-center.png" />
-        default square
-      </button>
-      <button class="btn btn-square btn-default">
-        <img class="icon" src="../../assets/google-merchant-center.png" />
-        default square
-        <img class="icon" src="../../assets/icons/check_on_fill_icon.svg" />
-      </button>
-      <button class="btn btn-square btn-primary">
-        <img class="icon" src="../../assets/icons/not_sure_white_icon.svg" />
-        primary square
-      </button>
+    <div class="epy-row">
+      <div class="col-1 col-2-m col-2-s">
+        <button class="btn btn-square-small">
+          <img class="icon" src="../../assets/icons/change_card.svg" />
+        </button>
+      </div>
+
+      <div class="col-1 col-2-m col-2-s">
+        <button class="btn btn-square-small btn-info">
+          <img class="icon" src="../../assets/icons/change_table.svg" />
+        </button>
+      </div>
+
+      <div class="col-3 col-4-m col-4-s">
+        <button class="btn btn-square btn-default">
+          <img class="icon" src="../../assets/google-merchant-center.png" />
+          default square
+        </button>
+      </div>
+
+      <div class="col-3 col-4-m col-4-s">
+        <button class="btn btn-square btn-default">
+          <img class="icon" src="../../assets/google-merchant-center.png" />
+          default square
+          <img class="icon" src="../../assets/icons/check_on_fill_icon.svg" />
+        </button>
+      </div>
+
+      <div class="col-3 col-4-m col-4-s">
+        <button class="btn btn-square btn-primary">
+          <img class="icon" src="../../assets/icons/not_sure_white_icon.svg" />
+          primary square
+        </button>
+      </div>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !squareBtnDisplay }">
       <pre>
       <code class="html" Highlight>
-      &lt;div class="container"&gt;
-          &lt;button class="btn btn-square-small"&gt;
-            &lt;img class="icon" src="..." /&gt;
-          &lt;/button&gt;
-          &lt;button class="btn btn-square-small btn-info"&gt;
-            &lt;img class="icon" src="..." /&gt;
-          &lt;/button&gt;
-          &lt;button class="btn btn-square btn-default"&gt;
-            &lt;img class="icon" src="..." /&gt;
-            default square
-          &lt;/button&gt;
-          &lt;button class="btn btn-square btn-default"&gt;
-            &lt;img class="icon" src="..." /&gt;
-            default square
-            &lt;img class="icon" src="..." /&gt;
-          &lt;/button&gt;
-          &lt;button class="btn btn-square btn-primary"&gt;
-            &lt;img class="icon" src="..." /&gt;
-            primary square
-          &lt;/button&gt;
-      &lt;/div&gt;
+      &lt;button class="btn btn-square-small"&gt;
+        &lt;img class="icon" src="..." /&gt;
+      &lt;/button&gt;
+      &lt;button class="btn btn-square-small btn-info"&gt;
+        &lt;img class="icon" src="..." /&gt;
+      &lt;/button&gt;
+      &lt;button class="btn btn-square btn-default"&gt;
+        &lt;img class="icon" src="..." /&gt;
+        default square
+      &lt;/button&gt;
+      &lt;button class="btn btn-square btn-default"&gt;
+        &lt;img class="icon" src="..." /&gt;
+        default square
+        &lt;img class="icon" src="..." /&gt;
+      &lt;/button&gt;
+      &lt;button class="btn btn-square btn-primary"&gt;
+        &lt;img class="icon" src="..." /&gt;
+        primary square
+      &lt;/button&gt;
       </code>
       </pre>
     </div>
   </div>
 
+  <!-- Rectangle -->
   <div class="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <h4>Rectangle</h4>
@@ -317,18 +323,19 @@
         (click)="rectangleBtnDisplay = !rectangleBtnDisplay"
       ></i>
     </div>
-    <div class="container">
-      <button class="btn btn-default btn-rectangle">
-        <img class="icon" src="./assets/icons/import_icon .svg" />
-        default rectangle
-      </button>
+    <div class="epy-row">
+      <div class="col-4 col-4-m col-4-sm">
+        <button class="btn btn-default btn-rectangle">
+          <img class="icon" src="./assets/icons/import_icon .svg" />
+          default rectangle
+        </button>
+      </div>
     </div>
-
     <div class="code-container" [ngClass]="{ hidden: !rectangleBtnDisplay }">
       <pre>
         <code class="html" Highlight>
         &lt;button class="btn btn-default btn-rectangle"&gt;
-          &lt;img class="icon" src="./assets/icons/import_icon .svg" /&gt;
+          &lt;img class="icon" src="..." /&gt;
           default rectangle
         &lt;/button&gt;
         </code>

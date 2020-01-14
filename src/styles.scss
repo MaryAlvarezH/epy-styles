@@ -7,11 +7,10 @@ hr {
 }
 
 .hljs {
-  //   background: $albaster;
   background: rgba(246, 246, 246, 0.2);
+  border-radius: 8px;
   color: $dove-gray;
   font-size: 13.5px;
-  border-radius: 8px;
 }
 
 .hljs-name {
@@ -32,11 +31,6 @@ hr {
 
 pre {
   margin: 0 !important;
-}
-
-.subtitle-container,
-h6 {
-  margin-top: 32px;
 }
 
 .subtitle-container {
@@ -65,7 +59,6 @@ h6 {
 .code-container {
   .fa {
     color: $silver;
-    // font-weight: 600;
     font-size: 18px;
     cursor: pointer;
   }
@@ -78,4 +71,14 @@ pre {
     align-self: flex-end;
     margin-bottom: 4px;
   }
+}
+
+.wrapper-section {
+  // padding-top: 10px;
+  // padding-bottom: 15px;
+}
+
+.subtitle-container {
+  margin-top: 24px;
+  margin-bottom: 8px;
 }

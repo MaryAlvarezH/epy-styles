@@ -1,38 +1,50 @@
 <h1>Cards</h1>
 <hr />
 
+<!-- Cards -->
 <div class="wrapper-section">
   <div class="subtitle-container subtitle-icon">
-    <h4>Card</h4>
-    <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+    <h4>Cards</h4>
+    <i class="fa fa-code" (click)="cardDisplay = !cardDisplay"></i>
   </div>
 
-  <div class="row">
-    <div class="col s3">
+  <div class="epy-row">
+    <div class="col-3 col-2-m col-3-s">
       <span>card</span>
       <div class="card" style="height: 80px;"></div>
     </div>
 
-    <div class="col s3">
+    <div class="col-3 col-2-m col-3-s">
       <span>card hoverable</span>
       <div class="card hoverable" style="height: 80px;"></div>
     </div>
 
-    <div class="col s6">
+    <div class="col-6 col-4-m col-4-s">
       <span>card panel</span>
       <div class="card-panel hoverable" style="height: 80px;"></div>
     </div>
   </div>
+
+  <div class="code-container" [ngClass]="{ hidden: !cardDisplay }">
+    <pre>
+    <code class="html" Highlight>
+    &lt;div class="card"&gt;&lt;/div&gt;
+    &lt;div class="card hoverable"&gt;&lt;/div&gt;
+    &lt;div class="card-panel hoverable"&gt;&lt;/div&gt;
+    </code>
+    </pre>
+  </div>
 </div>
 
+<!-- Templetes -->
 <div class="wrapper-section">
   <div class="subtitle-container subtitle-icon">
     <h4>Templetes</h4>
-    <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
+    <i class="fa fa-code" (click)="campaignCard = !campaignCard"></i>
   </div>
 
-  <div class="row">
-    <div class="col s9">
+  <div class="epy-row">
+    <div class="col-12 col-8-m col-4-s">
       <span>Campaign card</span>
       <div class="card-panel card-campaign hoverable">
         <div class="card-header">
@@ -90,5 +102,67 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="code-container" [ngClass]="{ hidden: !campaignCard }">
+    <pre>
+    <code class="html" Highlight>
+    &lt;div class="card-panel card-campaign hoverable"&gt;
+      &lt;div class="card-header"&gt;
+        &lt;span class="card-title"&gt;100 - Brand [Entropy]&lt;/span&gt;
+        &lt;span class="priority-label"&gt;High priority&lt;/span&gt;
+        &lt;div class="camp-type"&gt;
+          &lt;div class="icon-circle-container"&gt;
+            &lt;span class="search-icon"&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;span&gt;search&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="camp-details"&gt;
+        &lt;div class="general-info"&gt;
+          &lt;div class="field-info"&gt;
+            &lt;span class="field upper"&gt;Daily Budget&lt;/span&gt;
+            &lt;span class="field"&gt;$ 100&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="field-info"&gt;
+            &lt;span class="field upper"&gt;Status&lt;/span&gt;
+            &lt;span class="field yellow"&gt;Paused&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="field-info"&gt;
+            &lt;span class="field upper"&gt;Goal&lt;/span&gt;
+            &lt;span class="field"&gt;Maximaze Clicks&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="stats"&gt;
+          &lt;span class="field subtitle"&gt;last 7 days: &lt;/span&gt;
+          &lt;div class="stat"&gt;
+            &lt;span class="field upper"&gt;clicks&lt;/span&gt;
+            &lt;b class="metric-score"&gt;1.1k&lt;/b&gt;
+            &lt;div class="metric-percent"&gt;
+              &lt;i class="material-icons up text-red"&gt;arrow_drop_down&lt;/i&gt;
+              &lt;span&gt;-17.19%&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="stat"&gt;
+            &lt;span class="field upper"&gt;cost&lt;/span&gt;
+            &lt;b class="metric-score"&gt;$20.0k&lt;/b&gt;
+            &lt;div class="metric-percent"&gt;
+              &lt;i class="material-icons up text-green"&gt;arrow_drop_down&lt;/i&gt;
+              &lt;span&gt;-17.19%&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="stat"&gt;
+            &lt;span class="field upper"&gt;revenue&lt;/span&gt;
+            &lt;b class="metric-score"&gt;$66.5k&lt;/b&gt;
+            &lt;div class="metric-percent"&gt;
+              &lt;i class="material-icons up text-green"&gt;arrow_drop_up&lt;/i&gt;
+              &lt;span&gt;36.69%&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+    </pre>
   </div>
 </div>
