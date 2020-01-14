@@ -10,6 +10,7 @@ import { Subscription } from "rxjs";
 export class HomeComponent implements OnInit {
   public selectedComponent: Number;
   public componentSub: Subscription;
+  public smallMenuActive: Boolean;
 
   constructor(private compservice: ComponentsService) {}
 
@@ -22,6 +23,10 @@ export class HomeComponent implements OnInit {
         this.selectedComponent = this.compservice.components[selComp];
       }
     );
+  }
+
+  smallMenuChange(e) {
+    this.smallMenuActive = e;
   }
 
   ngOnDestroy() {

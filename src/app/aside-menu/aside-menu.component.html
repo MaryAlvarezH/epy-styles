@@ -1,8 +1,23 @@
-<div class="aside-menu-container">
+<div class="aside-menu-container" *ngIf="typeMenu === 'large'">
   <ul class="aside-menu-list">
     <li
       *ngFor="let comp of components; let i = index"
       (click)="selectElement(i)"
+      [ngClass]="{ 'select-element': i === selectedComponent }"
+    >
+      {{ comp | titlecase }}
+    </li>
+  </ul>
+</div>
+
+<div class="aside-menu-container small" *ngIf="typeMenu === 'small'">
+  <div class="icon-container">
+    <i class="fa fa-bars" (click)="smallMenuChange()"></i>
+  </div>
+  <ul class="aside-menu-list" *ngIf="smallMenuDisplay">
+    <li
+      *ngFor="let comp of components; let i = index"
+      (click)="selectElement(i, 'smallMenu')"
       [ngClass]="{ 'select-element': i === selectedComponent }"
     >
       {{ comp | titlecase }}

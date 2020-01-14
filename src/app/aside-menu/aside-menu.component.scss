@@ -1,14 +1,32 @@
 @import "../../styles.scss";
 
-.aside-menu-list {
-  li {
-    height: 45px;
-    cursor: pointer;
+.aside-menu-container {
+  .aside-menu-list {
+    li {
+      cursor: pointer;
+      height: 45px;
 
-    &.select-element {
-      color: $dove-gray;
-      font-size: 18px;
-      font-weight: 600;
+      &.select-element {
+        color: $dove-gray;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &.small {
+    margin: 24px;
+
+    .aside-menu-list {
+      margin-top: 24px;
+    }
+
+    .icon-container {
+      color: $dusty-gray;
+      cursor: pointer;
+      display: flex;
+      font-size: 24px;
+      justify-content: flex-start;
     }
   }
 }

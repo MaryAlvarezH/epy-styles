@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 import { ComponentsService } from "../services/components.service";
 import { Subscription } from "rxjs";
 
@@ -8,6 +8,9 @@ import { Subscription } from "rxjs";
   styleUrls: ["./aside-menu.component.scss"]
 })
 export class AsideMenuComponent implements OnInit {
+  @Input() typeMenu: String;
+  @Output() smallMenuActive = new EventEmitter<Boolean>();
+  public smallMenuDisplay: Boolean = false;
   public components: Array<any>;
   public selectedComponent: Number;
   public componentSub: Subscription;
@@ -24,11 +27,20 @@ export class AsideMenuComponent implements OnInit {
     );
   }
 
-  selectElement(i) {
+  selectElement(i, originMenu?) {
     this.compservice.selectionChange(i);
+
+    if (originMenu === "smallMenu") {
+      this.smallMenuChange();
+    }
   }
 
   ngOnDestroy() {
     this.componentSub.unsubscribe();
+  }
+
+  smallMenuChange() {
+    this.smallMenuDisplay = !this.smallMenuDisplay;
+    this.smallMenuActive.emit(this.smallMenuDisplay);
   }
 }

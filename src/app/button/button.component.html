@@ -15,22 +15,22 @@
       ></i>
     </div>
     <div class="epy-row">
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-default">
           default
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-primary">
           primary
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-primary" disabled>
           disabled
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-primary disabled">
           disabled
         </button>
@@ -39,19 +39,22 @@
 
     <div class="code-container" [ngClass]="{ hidden: !containBtnDisplay }">
       <pre>
-        <code class="html" Highlight>
-          &lt;button class="btn btn-default"&gt;
-              default
-          &lt;/button&gt;
-          &lt;button class="btn btn-primary"&gt;
-              primary
-          &lt;/button&gt;
-          &lt;button class="btn btn-primary" disabled&gt;
-              disabled
-          &lt;/button&gt;
-          &lt;button class="btn btn-primary disabled"&gt;
-              disabled
-          &lt;/button&gt;
+      <code class="html" Highlight>
+        &lt;button class="btn btn-default"&gt;
+            default
+        &lt;/button&gt;
+
+        &lt;button class="btn btn-primary"&gt;
+            primary
+        &lt;/button&gt;
+
+        &lt;button class="btn btn-primary" disabled&gt;
+            disabled
+        &lt;/button&gt;
+        
+        &lt;button class="btn btn-primary disabled"&gt;
+            disabled
+        &lt;/button&gt;
         </code>
         </pre>
     </div>
@@ -67,27 +70,27 @@
       ></i>
     </div>
     <div class="epy-row">
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-outline">
           outline
         </button>
       </div>
-      <div class="col-3 col-3-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-primary btn-outline">
           primary outline
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-primary btn-outline" disabled>
           disabled
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-primary btn-outline disabled">
           disabled
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-destructive btn-outline">
           destructive
         </button>
@@ -99,15 +102,19 @@
       &lt;button class="btn btn-outline"&gt;
           outline
       &lt;/button&gt;
+
       &lt;button class="btn btn-primary btn-outline"&gt;
           primary outline
       &lt;/button&gt;
+
       &lt;button class="btn btn-primary btn-outline" disabled&gt;
           disabled
       &lt;/button&gt;
+
       &lt;button class="btn btn-primary btn-outline disabled"&gt;
         disabled
       &lt;/button&gt;
+
       &lt;button class="btn btn-destructive btn-outline"&gt;
           destructive
       &lt;/button&gt;
@@ -126,12 +133,12 @@
       ></i>
     </div>
     <div class="epy-row">
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-destructive">
           destructive
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-destructive btn-outline">
           destructive
         </button>
@@ -147,6 +154,7 @@
         &lt;button class="btn btn-destructive"&gt;
           destructive
         &lt;/button&gt;
+
         &lt;button class="btn btn-destructive btn-outline"&gt;
           destructive
         &lt;/button&gt;
@@ -165,12 +173,12 @@
       ></i>
     </div>
     <div class="epy-row">
-      <div class="col-2 col-3-m col-4-s">
+      <div class="col-3 col-3-m col-4-s">
         <button class="btn btn-border-none">
           No border button
         </button>
       </div>
-      <div class="col-2 col-3-m col-4-s">
+      <div class="col-3 col-3-m col-4-s">
         <button class="btn btn-border-none">
           <span class="text-green">No border button</span>
         </button>
@@ -187,9 +195,11 @@
         &lt;button class="btn btn-border-none"&gt;
             No border button
         &lt;/button&gt;
+
         &lt;button class="btn btn-border-none"&gt;
           &lt;span class="text-green"&gt;No border button&lt;/span&gt;
         &lt;/button&gt;
+
         &lt;button class="btn btn-link"&gt;
           link
         &lt;/button&gt;
@@ -209,37 +219,63 @@
       <i class="fa fa-code" (click)="iconsBtnDisplay = !iconsBtnDisplay"></i>
     </div>
     <div class="epy-row">
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-primary">
-          <i class="fa fa-edit left"></i> primary
+          <i class="epy-icon-edit left"></i> primary
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-2 col-4-m col-4-s">
         <button class="btn btn-primary">
-          primary <i class="fa fa-edit right"></i>
+          primary <i class="epy-icon-edit right"></i>
         </button>
       </div>
-      <div class="col-2 col-2-m col-2-s">
+      <div class="col-3 col-5-m col-4-s">
         <button class="btn btn-primary">
-          <i class="fa fa-edit left"></i> primary
-          <i class="fa fa-user right"></i>
+          <i class="epy-icon-edit left"></i> primary
+          <i class="epy-icon-user right"></i>
         </button>
+      </div>
+
+      <div class="col-2 col-4-m col-4-s">
+        <div class="btn btn-link">
+          Link
+          <i class="epy-icon-create-campaign right"></i>
+        </div>
+      </div>
+
+      <div class="col-3 col-4-m col-4-s">
+        <div class="btn btn-border-none">
+          <i class="epy-icon-create-campaign left"></i>
+          No border button
+        </div>
       </div>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !iconsBtnDisplay }">
       <pre>
       <code class="html" Highlight>
       &lt;button class="btn btn-primary"&gt;
-        &lt;i class="fa fa-edit left"&gt;&lt;/i&gt; primary
+        &lt;i class="epy-icon-edit left"&gt;&lt;/i&gt; primary
       &lt;/button&gt;
+
       &lt;button class="btn btn-primary"&gt;
-        primary &lt;i class="fa fa-edit right"&gt;&lt;/i&gt;
+        primary &lt;i class="epy-icon-edit right"&gt;&lt;/i&gt;
       &lt;/button&gt;
+
       &lt;button class="btn btn-primary"&gt;
-        &lt;i class="fa fa-edit left"&gt;&lt;/i&gt;
+        &lt;i class="epy-icon-edit left"&gt;&lt;/i&gt;
         primary
-        &lt;i class="fa fa-user right"&gt;&lt;/i&gt;
+        &lt;i class="epy-icon-user right"&gt;&lt;/i&gt;
       &lt;/button&gt;
+
+      &lt;div class="btn btn-link"&gt;
+        Link
+        &lt;i class="epy-icon-create-campaign right"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+
+      &lt;div class="btn btn-border-none"&gt;
+        &lt;i class="epy-icon-create-campaign left"&gt;&lt;/i&gt;
+        No border button
+      &lt;/div&gt;
       </code>
       </pre>
     </div>
@@ -253,36 +289,36 @@
     </div>
 
     <div class="epy-row">
-      <div class="col-1 col-2-m col-2-s">
+      <div class="col-1 col-4-m col-2-s">
         <button class="btn btn-square-small">
-          <img class="icon" src="../../assets/icons/change_card.svg" />
+          <i class="epy-icon-cards"></i>
         </button>
       </div>
 
-      <div class="col-1 col-2-m col-2-s">
+      <div class="col-1 col-4-m col-2-s">
         <button class="btn btn-square-small btn-info">
-          <img class="icon" src="../../assets/icons/change_table.svg" />
+          <i class="epy-icon-charts"></i>
         </button>
       </div>
 
       <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-square btn-default">
-          <img class="icon" src="../../assets/google-merchant-center.png" />
+          <img src="../../assets/google-merchant-center.png" />
           default square
         </button>
       </div>
 
       <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-square btn-default">
-          <img class="icon" src="../../assets/google-merchant-center.png" />
+          <img src="../../assets/google-merchant-center.png" />
           default square
-          <img class="icon" src="../../assets/icons/check_on_fill_icon.svg" />
+          <img src="../../assets/icons/check_on_fill_icon.svg" />
         </button>
       </div>
 
       <div class="col-3 col-4-m col-4-s">
         <button class="btn btn-square btn-primary">
-          <img class="icon" src="../../assets/icons/not_sure_white_icon.svg" />
+          <i class="epy-icon-face-not-sure"></i>
           primary square
         </button>
       </div>
@@ -291,22 +327,26 @@
       <pre>
       <code class="html" Highlight>
       &lt;button class="btn btn-square-small"&gt;
-        &lt;img class="icon" src="..." /&gt;
+        &lt;i class="epy-icon-cards"&gt;&lt;/i&gt;
       &lt;/button&gt;
+
       &lt;button class="btn btn-square-small btn-info"&gt;
-        &lt;img class="icon" src="..." /&gt;
+        &lt;i class="epy-icon-charts"&gt;&lt;/i&gt;
       &lt;/button&gt;
+
       &lt;button class="btn btn-square btn-default"&gt;
-        &lt;img class="icon" src="..." /&gt;
+        &lt;img src="..." /&gt;
         default square
       &lt;/button&gt;
+
       &lt;button class="btn btn-square btn-default"&gt;
-        &lt;img class="icon" src="..." /&gt;
+        &lt;img src="..." /&gt;
         default square
-        &lt;img class="icon" src="..." /&gt;
+        &lt;img src="..." /&gt;
       &lt;/button&gt;
+
       &lt;button class="btn btn-square btn-primary"&gt;
-        &lt;img class="icon" src="..." /&gt;
+        &lt;i class="epy-icon-face-not-sure"&gt;&lt;/i&gt;
         primary square
       &lt;/button&gt;
       </code>
@@ -326,7 +366,7 @@
     <div class="epy-row">
       <div class="col-4 col-4-m col-4-sm">
         <button class="btn btn-default btn-rectangle">
-          <img class="icon" src="./assets/icons/import_icon .svg" />
+          <i class="epy-icon-import-campaign"></i>
           default rectangle
         </button>
       </div>
