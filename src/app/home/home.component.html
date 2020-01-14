@@ -1,9 +1,16 @@
+<div class="header">
+  <div class="header-title">
+    Epy Styles
+  </div>
+</div>
 <div class="dashboard">
   <div class="menu">
     <app-aside-menu></app-aside-menu>
   </div>
   <div class="main-section">
-    <app-font-color *ngIf="selectedComponent === 'fonts & colors'"></app-font-color>
+    <app-font-color
+      *ngIf="selectedComponent === 'fonts & colors'"
+    ></app-font-color>
     <app-button *ngIf="selectedComponent === 'buttons'"></app-button>
     <app-input *ngIf="selectedComponent === 'inputs'"></app-input>
     <app-select *ngIf="selectedComponent === 'selects'"></app-select>
@@ -13,3 +20,4 @@
     <app-grid *ngIf="selectedComponent === 'grid'"> </app-grid>
   </div>
 </div>
+<div class="footer"></div>
