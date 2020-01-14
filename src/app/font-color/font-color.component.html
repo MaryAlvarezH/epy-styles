@@ -191,20 +191,12 @@
       <span>Variables</span>
     </div>
     <div class="epy-row">
-      <div class="col-4 col-4-m col-4-s">
-        <div class="box-container">
-          <div class="box-shadow-rectangle"></div>
-          <span>x-large-shadow</span>
-          <span class="text-suggest">Onboarding Rectangle</span>
-          <span class="text-suggest">Hover & Focus</span>
-        </div>
-      </div>
 
-      <div class="col-3 col-4-m col-4-s">
+      <div class="col-2 col-4-m col-4-s">
         <div class="box-container">
-          <div class="box-shadow-lg"></div>
-          <span>large-shadow</span>
-          <span class="text-suggest">Large Buttons</span>
+          <div class="box-shadow-sm"></div>
+          <span>small-shadow</span>
+          <span class="text-suggest">Small Buttons</span>
         </div>
       </div>
 
@@ -216,13 +208,23 @@
         </div>
       </div>
 
-      <div class="col-2 col-4-m col-4-s">
+      <div class="col-3 col-4-m col-4-s">
         <div class="box-container">
-          <div class="box-shadow-sm"></div>
-          <span>small-shadow</span>
-          <span class="text-suggest">Small Buttons</span>
+          <div class="box-shadow-lg"></div>
+          <span>large-shadow</span>
+          <span class="text-suggest">Large Buttons</span>
         </div>
       </div>
+
+      <div class="col-4 col-4-m col-4-s">
+        <div class="box-container">
+          <div class="box-shadow-rectangle"></div>
+          <span>x-large-shadow</span>
+          <span class="text-suggest">Onboarding Rectangle</span>
+          <span class="text-suggest">Hover & Focus</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -409,13 +411,13 @@
       <i class="fa fa-code" (click)="fontTypesDisplay = !fontTypesDisplay"></i>
     </div>
 
-    <div class="container font-container">
-      <span class="title">Title</span>
-      <span class="subtitle">Subtitle</span>
-      <span class="text-regular">Text regular</span>
-      <span class="text-suggest">Text suggest</span>
-      <span class="text-small">Text small</span>
-      <span class="text-danger">Text danger</span>
+    <div class="epy-row">
+      <span class="col-2 col-1-m col-4-s title">Title</span>
+      <span class="col-2 col-1-m col-4-s subtitle">Subtitle</span>
+      <span class="col-2 col-1-m col-4-s text-regular">Text regular</span>
+      <span class="col-2 col-1-m col-4-s text-suggest">Text suggest</span>
+      <span class="col-2 col-1-m col-4-s text-small">Text small</span>
+      <span class="col-2 col-1-m col-4-s text-danger">Text danger</span>
     </div>
 
     <div class="code-container" [ngClass]="{ hidden: !fontTypesDisplay }">
@@ -441,14 +443,14 @@
         (click)="fontColorsDisplay = !fontColorsDisplay"
       ></i>
     </div>
-    <div class="font-container">
-      <span class="text-green">Text green</span>
-      <span class="text-blue">Text blue</span>
-      <span class="text-light-green">Text light green</span>
-      <span class="text-lavander">Text lavander</span>
-      <span class="text-purple">Text purple</span>
-      <span class="text-yellow">Text yellow</span>
-      <span class="text-red">Text red</span>
+    <div class="epy-row">
+      <span class="col-2 col-1-m col-4-s text-green">Text green</span>
+      <span class="col-2 col-1-m col-4-s text-blue">Text blue</span>
+      <span class="col-2 col-1-m col-4-s text-light-green">Text light green</span>
+      <span class="col-2 col-1-m col-4-s text-lavander">Text lavander</span>
+      <span class="col-2 col-1-m col-4-s text-purple">Text purple</span>
+      <span class="col-2 col-1-m col-4-s text-yellow">Text yellow</span>
+      <span class="col-2 col-1-m col-4-s text-red">Text red</span>
     </div>
     <div class="code-container" [ngClass]="{ hidden: !fontColorsDisplay }">
       <pre>
