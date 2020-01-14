@@ -2,61 +2,1297 @@
 <hr />
 
 <div>
-  <h4>12 Columns</h4>
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">12 Columns (Desktop)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">1 Column / 12 Columns</h4>
+    <i class="fa fa-code" (click)="deskOneDisplay = !deskOneDisplay"></i>
+  </div>
+
   <div class="wrapper-section">
-      <div class="epy-row">
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-2-m">col-1</div>
-        <div class="col-1 col-1-t col-2-m">col-1</div>
-        <div class="col-1 col-1-t col-3-m">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-2-t col-4-m">col-1</div>
-        <div class="col-1 col-2-t">col-1</div>
-        <div class="col-1 col-2-t">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-1-m">col-2</div>
-        <div class="col-1 col-1-t col-1-m">col-2</div>
-        <div class="col-1 col-1-t col-1-m">col-1</div>
-        <div class="col-1 col-1-t col-2-m">A</div>
-        <div class="col-1 col-1-t col-2-m">A</div>
-        <div class="col-1 col-1-t col-3-m">A</div>
-        <div class="col-1 col-1-t col-1-m">A</div>
-        <div class="col-1 col-2-t col-4-m">A</div>
-        <div class="col-1 col-2-t">A</div>
-        <div class="col-1 col-2-t">A</div>
-        <div class="col-1 col-2-t">A</div>
-        <div class="col-2 col-3-t">A</div>
-        <div class="col-2 col-3-t">A</div>
-        <div class="col-2 col-2-t">A</div>
-        <div class="col-2 col-4-t">A</div>
-        <div class="col-2 col-4-t">A</div>
-        <div class="col-2 col-5-t">A</div>
-        <div class="col-3 col-3-t">A</div>
-        <div class="col-3 col-6-t">A</div>
-        <div class="col-3 col-2-t">A</div>
-        <div class="col-3 col-7-t">A</div>
-        <div class="col-4 col-1-t">A</div>
-        <div class="col-4 col-8-t">A</div>
-        <div class="col-4">A</div>
-        <div class="col-5">A</div>
-        <div class="col-5">A</div>
-        <div class="col-2">A</div>
-        <div class="col-6">A</div>
-        <div class="col-6">A</div>
-        <div class="col-7">A</div>
-        <div class="col-5">A</div>
-        <div class="col-8">A</div>
-        <div class="col-4">A</div>
-        <div class="col-9">A</div>
-        <div class="col-3">A</div>
-        <div class="col-10">A</div>
-        <div class="col-2">A</div>
-        <div class="col-11">A</div>
-        <div class="col-1">A</div>
-        <div class="col-12">A</div>
+    <div class="epy-row">
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
     </div>
+
+    <br>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOneDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;      
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">2 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskTwoDisplay = !deskTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">3 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskThreeDisplay = !deskThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3 content-green">col-3</div>
+      <div class="col-3 content-green">col-3</div>
+      <div class="col-3 content-green">col-3</div>
+      <div class="col-3 content-green">col-3</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">4 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskFourDisplay = !deskFourDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4 content-green">col-4</div>
+      <div class="col-4 content-green">col-4</div>
+      <div class="col-4 content-green">col-4</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskFourDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-4"&gt;
+              col-4
+            &lt;/div&gt;
+            &lt;div class="col-4"&gt;
+              col-4
+            &lt;/div&gt;
+            &lt;div class="col-4"&gt;
+              col-4
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">5 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskFiveDisplay = !deskFiveDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-5 content-green">col-5</div>
+      <div class="col-5 content-green">col-5</div>
+      <div class="col-2 content-green">col-2</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskFiveDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-5"&gt;
+              col-5
+            &lt;/div&gt;
+            &lt;div class="col-5"&gt;
+              col-5
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">6 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskSixDisplay = !deskSixDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-6 content-green">col-6</div>
+      <div class="col-6 content-green">col-6</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskSixDisplay }">
+      <pre>
+         <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-6"&gt;
+              col-6
+            &lt;/div&gt;
+            &lt;div class="col-6"&gt;
+              col-6
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">7 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskSevenDisplay = !deskSevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-7 content-green">col-7</div>
+      <div class="col-5 content-green">col-5</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskSevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-7"&gt;
+              col-7
+            &lt;/div&gt;
+            &lt;div class="col-5"&gt;
+              col-5
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">8 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskEightDisplay = !deskEightDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-8 content-green">col-8</div>
+      <div class="col-4 content-green">col-4</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskEightDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-8"&gt;
+              col-8
+            &lt;/div&gt;
+            &lt;div class="col-4"&gt;
+              col-4
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">9 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskNineDisplay = !deskNineDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-9 content-green">col-9</div>
+      <div class="col-3 content-green">col-3</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskNineDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-9"&gt;
+              col-9
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">10 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskTenDisplay = !deskTenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-10 content-green">col-10</div>
+      <div class="col-2 content-green">col-2</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskTenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-10"&gt;
+              col-10
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">11 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskElevenDisplay = !deskElevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-11 content-green">col-11</div>
+      <div class="col-1 content-green">col-1</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskElevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-11"&gt;
+              col-11
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">12 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskTwelveDisplay = !deskTwelveDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-12 content-green">col-12</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskTwelveDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-12"&gt;
+              col-12
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    
+  </div>
+
+  <hr />
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">Offset 12 Columns (Desktop)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">Offset 1 Column / 12 Columns</h4>
+    <i class="fa fa-code" (click)="deskOffsetOneDisplay = !deskOffsetOneDisplay"></i>
+  </div>
+
+  <div class="wrapper-section">
+    <div class="epy-row">
+      <div class="col-1 offset-1 content-green">col-1 offset-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+      <div class="col-1 content-green">col-1</div>
+    </div>
+
+    <br>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetOneDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1 offset-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;
+            &lt;div class="col-1"&gt;
+              col-1
+            &lt;/div&gt;    
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 2 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetTwoDisplay = !deskOffsetTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2 offset-2 content-green">col-2 offset-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+      <div class="col-2 content-green">col-2</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2 offset-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 3 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetThreeDisplay = !deskOffsetThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3 offset-3 content-green">col-3 offset-3</div>
+      <div class="col-3 content-green">col-3</div>
+      <div class="col-3 content-green">col-3</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3 offset-3"&gt;
+              col-3
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+            &lt;div class="col-3"&gt;
+              col-3
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 4 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetFourDisplay = !deskOffsetFourDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4 offset-4 content-green">col-4 offset-4</div>
+      <div class="col-4 content-green">col-4</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetFourDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-4 offset-4"&gt;
+              col-4
+            &lt;/div&gt;
+            &lt;div class="col-4"&gt;
+              col-4
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 5 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetFiveDisplay = !deskOffsetFiveDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-5 offset-5 content-green">col-5 offset-5</div>
+      <div class="col-2 content-green">col-2</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetFiveDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-5 offset-5"&gt;
+              col-5
+            &lt;/div&gt;
+            &lt;div class="col-2"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 6 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetSixDisplay = !deskOffsetSixDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-6 offset-6 content-green">col-6 offset-6</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetSixDisplay }">
+      <pre>
+         <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-6 offset-6"&gt;
+              col-6
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 7 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetSevenDisplay = !deskOffsetSevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-5 offset-7 content-green">col-5 offset-7</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetSevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-5 offset-7"&gt;
+              col-5
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 8 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetEightDisplay = !deskOffsetEightDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4 offset-8 content-green">col-4</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetEightDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-4 offset-8"&gt;
+              col-4
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 9 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetNineDisplay = !deskOffsetNineDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3 offset-9 content-green">col-3 offset-9</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetNineDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3 offset-9"&gt;
+              col-3
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 10 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetTenDisplay = !deskOffsetTenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2 offset-10 content-green">col-2 offset-10</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetTenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2 offset-10"&gt;
+              col-2
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 11 Columns / 12 Columns</h4>
+      <i class="fa fa-code" (click)="deskOffsetElevenDisplay = !deskOffsetElevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-1 offset-11 content-green">col-1 offset-11</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !deskOffsetElevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1 offset-11"&gt;
+              col-1
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+    
+  </div>
+
+  <hr />
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">8 Columns (Tablet)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">1 Column / 8 Columns</h4>
+    <i class="fa fa-code" (click)="tabletOneDisplay = !tabletOneDisplay"></i>
+  </div>
+
+  <div class="wrapper-section">
+
+    <div class="epy-row">
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOneDisplay }">
+      <pre>
+          <code class="html" Highlight>
+            &lt;div class="epy-row"&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">2 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletTwoDisplay = !tabletTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2-m content-blue">col-2-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">3 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletThreeDisplay = !tabletThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3-m content-blue">col-3-m</div>
+      <div class="col-3-m content-blue">col-3-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3-m"&gt;
+              col-3-m
+            &lt;/div&gt;
+            &lt;div class="col-3-m"&gt;
+              col-3-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">4 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletFourDisplay = !tabletFourDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4-m content-blue">col-4-m</div>
+      <div class="col-4-m content-blue">col-4-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletFourDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-4-m"&gt;
+              col-4-m
+            &lt;/div&gt;
+            &lt;div class="col-4-m"&gt;
+              col-4-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">5 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletFiveDisplay = !tabletFiveDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-5-m content-blue">col-5-m</div>
+      <div class="col-3-m content-blue">col-3-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletFiveDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-5-m"&gt;
+              col-5-m
+            &lt;/div&gt;
+            &lt;div class="col-3-m"&gt;
+              col-3-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">6 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletSixDisplay = !tabletSixDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-6-m content-blue">col-6-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletSixDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-6-m"&gt;
+              col-6-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">7 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletSevenDisplay = !tabletSevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-7-m content-blue">col-7-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletSevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-7-m"&gt;
+              col-7-m
+            &lt;/div&gt;
+            &lt;div class="col-1-m"&gt;
+              col-1-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">8 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletEightDisplay = !tabletEightDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-8-m content-blue">col-8-m</div>
+    </div>
+    <div class="code-container" [ngClass]="{ hidden: !tabletEightDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-8-m"&gt;
+              col-8-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">Offset 8 Columns (Tablet)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">Offset 1 Column / 8 Columns</h4>
+    <i class="fa fa-code" (click)="tabletOffsetOneDisplay = !tabletOffsetOneDisplay"></i>
+  </div>
+
+  <div class="wrapper-section">
+
+    <div class="epy-row">
+      <div class="col-1-m offset-1-m content-blue">col-1-m offset-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+      <div class="col-1-m content-blue">col-1-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetOneDisplay }">
+      <pre>
+          <code class="html" Highlight>
+            &lt;div class="epy-row"&gt;
+              &lt;div class="col-1-m offset-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+              &lt;div class="col-1-m"&gt;
+                col-1-m
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+        </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 2 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletOffsetTwoDisplay = !tabletOffsetTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2-m offset-2-m content-blue">col-2-m offset-2-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2-m offset-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 3 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletOffsetThreeDisplay = !tabletOffsetThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3-m offset-3-m content-blue">col-3-m offset-3-m</div>
+      <div class="col-2-m content-blue">col-2-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3-m offset-3-m"&gt;
+              col-3-m
+            &lt;/div&gt;
+            &lt;div class="col-2-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 4 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletOffsetFourDisplay = !tabletOffsetFourDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4-m offset-4-m content-blue">col-4-m offset-4-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetFourDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-4-m offset-4-m"&gt;
+              col-4-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 5 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletFiveDisplay = !tabletFiveDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3-m offset-5-m content-blue">col-3-m offset-5-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletFiveDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3-m offset-5-m"&gt;
+              col-3-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 6 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletOffsetSixDisplay = !tabletOffsetSixDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2-m offset-6-m content-blue">col-2-m offset-6-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetSixDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2-m offset-6-m"&gt;
+              col-2-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 7 Columns / 8 Columns</h4>
+      <i class="fa fa-code" (click)="tabletOffsetSevenDisplay = !tabletOffsetSevenDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-1-m offset-7-m content-blue">col-1-m offset-7-m</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !tabletOffsetSevenDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1-m offset-7-m"&gt;
+              col-1-m
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+  <hr />
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">4 Columns (Mobile)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">1 Column / 4 Columns</h4>
+    <i class="fa fa-code" (click)="mobileOneDisplay = !mobileOneDisplay"></i>
+  </div>
+
+  <div class="wrapper-section">
+
+    <div class="epy-row">
+      <div class="col-1-s content-light-green">col-1-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileOneDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">2 Columns / 4 Columns</h4>
+      <i class="fa fa-code" (click)="mobileTwoDisplay = !mobileTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2-s content-light-green">col-2-s</div>
+      <div class="col-2-s content-light-green">col-2-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2-s"&gt;
+              col-2-s
+            &lt;/div&gt;
+            &lt;div class="col-2-s"&gt;
+              col-2-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">3 Columns / 4 Columns</h4>
+      <i class="fa fa-code" (click)="mobileThreeDisplay = !mobileThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-3-s content-light-green">col-3-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-3-s"&gt;
+              col-3-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">4 Columns / 4 Columns</h4>
+      <i class="fa fa-code" (click)="mobileFourDisplay = !mobileFourDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-4-s content-light-green">col-4-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileFourDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;  
+            &lt;div class="col-4-s"&gt;
+              col-4-s
+             &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div class="subtitle-container subtitle-icon">
+    <div class="subtitle">Offset 4 Columns (Mobile)</div>
+  </div>
+
+  <div class="subtitle-container subtitle-icon">
+    <h4 class="sub-type">Offset 1 Column / 4 Columns</h4>
+    <i class="fa fa-code" (click)="mobileOffsetOneDisplay = !mobileOffsetOneDisplay"></i>
+  </div>
+
+  <div class="wrapper-section">
+
+    <div class="epy-row">
+      <div class="col-1-s offset-1-s content-light-green">col-1-s offset-1-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+      <div class="col-1-s content-light-green">col-1-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileOffsetOneDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1-s offset-1-s "&gt;
+              col-1-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+            &lt;div class="col-1-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 2 Columns / 4 Columns</h4>
+      <i class="fa fa-code" (click)="mobileOffsetTwoDisplay = !mobileOffsetTwoDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-2-s offset-2-s content-light-green">col-2-s offset-2-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileOffsetTwoDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-2-s offset-2-s"&gt;
+              col-2-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
+    <div class="subtitle-container subtitle-icon">
+      <h4 class="sub-type">Offset 3 Columns / 4 Columns</h4>
+      <i class="fa fa-code" (click)="mobileOffsetThreeDisplay = !mobileOffsetThreeDisplay"></i>
+    </div>
+
+    <div class="epy-row">
+      <div class="col-1-s offset-3-s content-light-green">col-1-s offset-3-s</div>
+    </div>
+
+    <div class="code-container" [ngClass]="{ hidden: !mobileOffsetThreeDisplay }">
+      <pre>
+        <code class="html" Highlight>
+          &lt;div class="epy-row"&gt;
+            &lt;div class="col-1-s offset-3-s"&gt;
+              col-1-s
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
+    </div>
+
   </div>
 </div>
