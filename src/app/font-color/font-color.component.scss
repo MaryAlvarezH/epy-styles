@@ -1,29 +1,31 @@
 @import "../../styles.scss";
-.wrapper-section {
-  padding-top: 10px;
-  padding-bottom: 15px;
+
+.main-palette-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3%;
+  margin-bottom: 16px;
 }
 
-.container {
+.circle-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
-}
 
-.content {
-  width: 13%;
-  height: 32px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 10px;
-  padding: 0 8px;
+  .circle {
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    margin-right: 16px;
+  }
+
+  &.usage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .square {
-  width: 18%;
   height: 92px;
   border-radius: 4px;
   display: flex;
@@ -38,7 +40,7 @@
     width: 100%;
     height: 32px;
 
-    div {
+    > div {
       height: inherit;
       width: 50%;
       line-height: 10px;
@@ -47,6 +49,28 @@
       align-items: center;
     }
   }
+}
+
+.content {
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.content-white {
+    border: 1px solid $alto;
+  }
+
+  .text-small {
+    font-size: 14px;
+  }
+}
+
+.font-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 16px;
 }
 
 .text-small {
@@ -121,19 +145,6 @@
   background-color: $amethyst;
 }
 
-.circle {
-  height: 16px;
-  width: 16px;
-  border-radius: 16px;
-  margin-right: 16px;
-}
-
-.circle-container {
-  display: flex;
-  align-items: center;
-  width: 20%;
-}
-
 .dune {
   background-color: $dune;
 }
@@ -205,22 +216,14 @@
   }
 }
 
-.shadows-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-
 .box-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 112px auto;
+  align-items: end;
 }
 
 .box-shadow-rectangle {
   height: 112px;
-  width: 160px;
   border: 1px solid $seashell;
   border-radius: 4px;
   background-color: $white;
@@ -230,7 +233,6 @@
 .box-shadow-lg {
   box-sizing: border-box;
   height: 84px;
-  width: 160px;
   border: 1px solid $seashell;
   border-radius: 4px;
   background-color: $white;
@@ -240,7 +242,6 @@
 .box-shadow-m {
   box-sizing: border-box;
   height: 61px;
-  width: 160px;
   border: 1px solid $seashell;
   border-radius: 4px;
   background-color: $white;
@@ -266,10 +267,4 @@
     flex-direction: column;
     width: 100% !important;
   }
-}
-
-.font-container {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  column-gap: 16px;
 }

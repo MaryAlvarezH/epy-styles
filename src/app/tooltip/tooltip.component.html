@@ -1,8 +1,12 @@
 <div>
-  <h4>Tooltip</h4>
+  <div class="subtitle-container subtitle-icon">
+    <h1>Tooltip</h1>
+    <i class="fa fa-code" (click)="tooltipDisplay = !tooltipDisplay"></i>
+  </div>
+
   <hr />
-  <div class="row">
-    <div class="col s9">
+  <div class="epy-row">
+    <div class="col-9 col-6-m col-3-s">
       <div
         class="tooltip"
         (click)="tooltipActive = !tooltipActive"
@@ -16,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="col s3">
+    <div class="col-3 col-2-m col-1-s">
       <div
         class="tooltip"
         (click)="tooltipActiveTwo = !tooltipActiveTwo"
@@ -30,5 +34,31 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="code-container" [ngClass]="{ hidden: !tooltipDisplay }">
+    <pre>
+    <code class="html" Highlight>
+    &lt;!-- Tooltip --&gt;
+    &lt;div class="tooltip"&gt;
+        &lt;div class="tooltip-header"&gt;
+          &lt;span class="tooltip-title"&gt;tooltip title?&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div class="tooltip-content"&gt;
+        tooltip content
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Tooltip active --&gt;
+    &lt;div class="tooltip active"&gt;
+        &lt;div class="tooltip-header"&gt;
+          &lt;span class="tooltip-title"&gt;tooltip title?&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;div class="tooltip-content"&gt;
+        tooltip content
+      &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+  </pre>
   </div>
 </div>

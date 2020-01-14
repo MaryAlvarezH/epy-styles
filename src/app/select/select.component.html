@@ -2,13 +2,14 @@
   <h1>Selects</h1>
   <hr />
 
+  <!-- Types -->
   <div class col="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <div class="subtitle">Types</div>
       <i class="fa fa-code" (click)="typeSelect = !typeSelect"></i>
     </div>
-    <div class="container">
-      <div class="section-element">
+    <div class="epy-row">
+      <div class="col-3 col-4-m col-4-s">
         <h4 class="sub-type">Primary</h4>
         <div
           class="select select-primary"
@@ -35,7 +36,8 @@
           </div>
         </div>
       </div>
-      <div class="section-element">
+
+      <div class="col-3 col-4-m col-4-s">
         <h4 class="sub-type">Outline</h4>
         <div
           class="select select-outline"
@@ -62,7 +64,8 @@
           </div>
         </div>
       </div>
-      <div class="section-element">
+
+      <div class="col-3 col-4-m col-4-s">
         <h4 class="sub-type">Line</h4>
         <div
           class="select select-line"
@@ -89,7 +92,8 @@
           </div>
         </div>
       </div>
-      <div class="section-element">
+
+      <div class="col-3 col-4-m col-4-s">
         <h4 class="sub-type">No border</h4>
         <div
           class="select select-border-none"
@@ -140,13 +144,15 @@
       </pre>
     </div>
   </div>
+
+  <!-- Variations -->
   <div class col="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <div class="subtitle">Variations</div>
       <i class="fa fa-code" (click)="variationSelect = !variationSelect"></i>
     </div>
-    <div class="container">
-      <div class="section-element">
+    <div class="epy-row">
+      <div class="col-4 col-4-m col-4-s">
         <h4 class="sub-type">Primary outline</h4>
         <div
           class="select select-primary select-outline"
@@ -174,7 +180,7 @@
         </div>
       </div>
 
-      <div class="section-element">
+      <div class="col-4 col-4-m col-4-s">
         <h4 class="sub-type">No border button + color text</h4>
         <div
           class="select select-border-none"
@@ -248,13 +254,14 @@
     </div>
   </div>
 
+  <!-- Content -->
   <div class col="wrapper-section">
     <div class="subtitle-container subtitle-icon">
       <div class="subtitle">Content</div>
       <i class="fa fa-code" (click)="contentSelect = !contentSelect"></i>
     </div>
-    <div class="container">
-      <div class="section-element">
+    <div class="epy-row">
+      <div class="col-4 col-4-m col-4-s">
         <h4 class="sub-type">Icons</h4>
         <div
           class="select select-outline"
@@ -283,7 +290,7 @@
         </div>
       </div>
 
-      <div class="section-element">
+      <div class="col-4 col-4-m col-4-s">
         <h4 class="sub-type">Search Filter</h4>
         <div
           class="select select-line"
@@ -373,14 +380,15 @@
     </div>
   </div>
 
+  <!-- Label -->
   <div class col="wrapper-section">
     <div class="subtitle-container sm subtitle-icon">
       <h4>Labels</h4>
       <i class="fa fa-code" (click)="labelSelect = !labelSelect"></i>
     </div>
 
-    <div class="container">
-      <div class="section-element">
+    <div class="epy-row">
+      <div class="col-4 col-4-m col-4-s">
         <div
           class="select select-outline"
           (click)="selectNine = !selectNine"
@@ -408,7 +416,7 @@
         </div>
       </div>
 
-      <div class="section-element">
+      <div class="col-4 col-4-m col-4-s">
         <div
           class="select select-line"
           (click)="selectTen = !selectTen"
@@ -436,7 +444,7 @@
         </div>
       </div>
 
-      <div class="section-element">
+      <div class="col-4 col-4-m col-4-s">
         <div
           class="select select-line"
           (click)="selectEleven = !selectEleven"

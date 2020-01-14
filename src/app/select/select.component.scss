@@ -1,37 +1,5 @@
-.wrapper-section {
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.subtitle-container {
-  &.sm {
-    margin-bottom: 0px;
-    // margin-top: 16px;
-
-    h4 {
-      margin: 0;
-    }
-  }
-}
-
-.subtitle-container,
-h6 {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  padding: 15px 0;
-}
-
-.section-element {
-  width: 100%;
-  margin-right: 3%;
-}
+@import "../../styles.scss";
 
 .sub-type {
   margin-bottom: 16px;
-  margin-top: 0px;
 }
